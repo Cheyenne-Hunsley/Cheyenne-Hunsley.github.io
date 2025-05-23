@@ -1,0 +1,89 @@
+/* html style */
+
+html {
+    background-color: rgb(255, 255, 157);
+
+} 
+
+/* body style*/ 
+body{ 
+    background-color: white;
+    border: 2px solid black;
+    width: 1200px;
+    padding: 2px; /*the space within the border between section and border, the value of padding moves clockwise (ie 12px = top, 6px = right...)*/
+    margin: 0px auto; /*the space outside the border*/
+}
+
+/* Header Style */
+header {
+
+    height: 220px;
+    background-color: beige;
+    border-bottom: 2px solid black;
+
+}
+header img {
+    width: 90px;
+    height: 90px;
+    border-radius:40px ; /*rounded corner for borders*/
+    float: left;
+
+}
+
+/*Heading style isnide header*/
+
+header h1 {
+    color: darkgreen;
+    font-size: 28px;
+    font-weight: 500; /*value is ammount of boldness*/
+    font-family:Arial, Helvetica, sans-serif; /* type of font*/
+    font-style: normal;
+
+}
+
+header h2 {
+    color: darkgreen;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+main
+{
+    padding: 2px; 
+}
+
+main section img {
+
+    width: 400px;
+    height: 300px;
+    margin: 7px auto;
+    display: block;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table caption {
+    font-style: italic;
+    color: red;
+    font-size:18px ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*footer style*/
+
+footer {
+    background-color: beige;
+    height: 120px;
+    border-top: 2px solid black;
+}
+
+footer p {
+
+    text-align: center;
+
+}
