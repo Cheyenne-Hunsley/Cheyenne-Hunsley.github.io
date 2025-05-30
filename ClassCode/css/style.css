@@ -2,6 +2,7 @@
 
 html {
     background-color: rgb(255, 255, 157);
+    background-image: url ("images/background.jpg");
 
 } 
 
@@ -9,8 +10,8 @@ html {
 body{ 
     background-color: white;
     border: 2px solid black;
-    width: 1200px;
-    padding: 2px; /*the space within the border between section and border, the value of padding moves clockwise (ie 12px = top, 6px = right...)*/
+    width: 1000px;
+    padding: 2px; /*the space within the border between section/text and border, the value of padding moves clockwise (ie 12px = top, 6px = right...)*/
     margin: 0px auto; /*the space outside the border*/
 }
 
@@ -20,14 +21,17 @@ header {
     height: 220px;
     background-color: beige;
     border-bottom: 2px solid black;
+    background-image: linear-gradient(to right, white, pink, red, black); /*to reight can be replaced with a degree amount*/
 
 }
+/* Website Logo Image*/
+
 header img {
     width: 90px;
     height: 90px;
     border-radius:40px ; /*rounded corner for borders*/
     float: left;
-
+    margin: 7px;
 }
 
 /*Heading style isnide header*/
@@ -48,12 +52,53 @@ header h2 {
     font-style: italic;
 }
 
+h2::first-letter {
+    font-size: 45px;
+    text-shadow: 4px 4px 5px red; /*horrizontal shadow, vertical shadow, bluriness of shadow (higher number more blurry), and colour*/
+    
+}
+
+p::first-line {
+    color: red;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav ul li a:link {  /*adjusts how the text link looks*/
+    color: blue;
+}
+
+nav ul li a:visited {   /*adjusts how the link looks when clicked*/
+    color: darkblue;
+}
+
+nav ul li a:hover { /*ajusts how the link looks when you hover it*/
+    color: aqua;
+}
+
+nav ul li a:active {    /*different states of a link; ie active, hover, etc..*/
+    text-decoration: none;
+    color:aquamarine
+}
+
 main
 {
     padding: 2px; 
 }
 
-main section img {
+main section img#first {    /*#first is the img id*/
 
     width: 400px;
     height: 300px;
@@ -61,10 +106,18 @@ main section img {
     display: block;
 }
 
+.intro {
+    border: 2px solid black;
+}
+
+/*table style*/
+
 table {
     border: 2px solid black;
     border-collapse: collapse;
     width: 50%;
+    margin: 10px auto;
+    box-shadow: 4px 4px 5px black;
 }
 
 table caption {
@@ -72,6 +125,33 @@ table caption {
     color: red;
     font-size:18px ;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td {
+    border: 2px solid black;
+    vertical-align: top;    /*where the text vertically aligns*/
+}
+
+tr:first-child {    /*changes the first row of the table*/
+    background-color: beige;
+}
+
+tr:nth-child(2) {   /*for specifc rows (numbers or even/odd can be written in bracket) */
+    background-color: bisque;
+}
+
+tr:last-child {     /* changes the last row of a table */
+    background-color: blanchedalmond;
+}
+
+main div:first-of-type {    /*first type of div element*/
+
+    border: 2px solid blue;
+}
+
+main section:last-of-type { /*last type of section element*/
+
+    background-color: aquamarine;
 }
 
 /*footer style*/
@@ -85,5 +165,6 @@ footer {
 footer p {
 
     text-align: center;
+    font-size: 18px;
 
 }

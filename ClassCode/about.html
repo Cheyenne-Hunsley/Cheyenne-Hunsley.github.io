@@ -8,6 +8,7 @@
         <meta name="keywords"   content="HTML, CSS, Web Design">
         <meta name="description"    content="About page of my website">
         <meta name="viewport"       content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet"  href="css/normalize.css"    type="text/css">
         <link rel="stylesheet"  href="css/style.css"    type="text/css">
     </head>
     <body>
@@ -26,26 +27,32 @@
         <main>
             <table> 
                 <caption>My Weekly Schedule</caption>
-                <tr>
-                    <th>Name</th>   <!--Table header-->
-                    <th>Type</th>
-                    <th>Date</th>
-                </tr>
-                <tr>
-                    <td>Web Programming</td>    <!--Table data-->
-                    <td>1st Term</td>
-                    <td>Wednesday</td>
-                </tr>
-                <tr>
-                    <td>Database Design</td>
-                    <td>1st Term</td>
-                    <td>Thursday</td>
-                </tr>
-                <tr>
-                    <td>Operating Systems</td>
-                    <td>1st Term</td>
-                    <td>Monday</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Name</th>   <!--Table header-->
+                        <th>Type</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Programming</td>    <!--Table data-->
+                        <td>1st Term</td>
+                        <td>Wednesday</td>
+                    </tr>
+                    <tr>
+                        <td>Database Design</td>
+                        <td>1st Term</td>
+                        <td>Thursday</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Operating Systems</td>
+                        <td>1st Term</td>
+                        <td>Monday</td>
+                    </tr>
+                </tfoot>
             </table>
         </main>
         <footer>

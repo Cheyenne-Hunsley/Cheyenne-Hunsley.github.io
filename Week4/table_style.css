@@ -1,0 +1,27 @@
+/* Lab 4 Stylesheet*/
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 800px;
+    margin: 0px auto;
+    font-size: 20px;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+td:nth-last-of-type(1) {
+    text-align: right;
+}
+tr:nth-child(even) {
+    background-color: yellow;
+}
+
+th {
+    background-color: yellow;
+}
+
+/* Questions to ask */
+/* Do we make both tables on one HTML? */

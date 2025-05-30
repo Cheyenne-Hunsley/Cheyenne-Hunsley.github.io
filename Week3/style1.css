@@ -1,0 +1,69 @@
+html {
+    background-color: yellow;
+}
+body {
+    background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 650px;
+    border: 10px double blue;
+    padding: 20px;
+    margin: 0px auto;
+    
+}
+main img {
+    width: 300px ;
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+.paragraph {
+    text-align: left; /* the question said to "right align" the text but if I had done so it wouldn't look like the picture*/
+
+}
+
+main p cite {
+    color: blue;
+    font-style: normal;
+    text-align: right;
+    display: block;
+    
+}
+
+main blockquote {
+    margin: 10px auto;
+    text-align: left;
+
+}
+
+main ul {
+    padding-inline-start: 16px;
+
+}
+
+main ul li {
+    margin: 5px auto;
+
+}
+
+main h1 {
+    color: blue;
+    font-size: 28px;
+}
+
+main h2 {
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+main h3 {
+    font-size: 18px;
+}
+
+footer {
+    border-top: 2px solid blue;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
