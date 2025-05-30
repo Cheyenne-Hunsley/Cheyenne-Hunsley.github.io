@@ -7,6 +7,7 @@
         <meta name="keywords" content="HTML, CSS, Web Design">
         <meta name="description" content="About page of my Little Store Website">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
@@ -21,35 +22,37 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
-
         </nav>
         <main>
             <table>
                 <caption>My Weekly Schedule</caption>
-                <tr>
+                <thead>
+                    <tr>
                     <th>Name</th>
                     <th>Type</th>
                     <th>Day</th>
                 </tr>
-                <tr>
+                </thead>
+                <tbody>
+                     <tr>
                     <td>Web Programming</td>
                     <td>1st Term</td>
-                    <td>Wednesday</td>
-
+                    <td rowspan="2">Wednesday</td>
                 </tr>
                 <tr>
                     <td>Database Design</td>
                     <td>1st Term</td>
-                    <td>Thursday</td>
-
-
+                    <!-- <td>Thursday</td> -->
                 </tr>
+                </tbody>   
+               <tfoot>
                 <tr>
                     <td>Operating System</td>
                     <td>1st Term</td>
                     <td>Monday</td>
                 </tr>
+               </tfoot>
+                
             </table>
         </main>
          <footer>

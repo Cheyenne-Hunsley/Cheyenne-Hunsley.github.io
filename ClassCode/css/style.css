@@ -54,7 +54,7 @@ header h2 {
 
 h2::first-letter {
     font-size: 45px;
-    text-shadow: 4px 4px 5px red; /*horrizontal shadow, vertical shadow, bluriness of shadow (higher number more blurry), and colour*/
+    text-shadow: 4px 4px 5px red; /*horrizontal shadow, vertical shadow, bluriness of shadow, (optional) wrap around shadow ammount(on left)  (higher number more blurry), and colour*/
     
 }
 

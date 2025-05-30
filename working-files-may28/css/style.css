@@ -1,6 +1,10 @@
 /* html style */
 html {
-   background-color: yellow;
+   /* background-color: yellow; */
+   background-image: url("images/background.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
 
 }
 
@@ -23,6 +27,7 @@ header {
     height: 180px;
     background-color: beige;
     border-bottom: 2px solid black;
+    background-image: linear-gradient(90deg, white, pink, red, black);
 }
 
 /* website logo style */
@@ -114,6 +119,17 @@ main section img#first {
     border: 2px solid black;
 }
 
+h2::first-letter {
+
+    font-size: 45px;
+    text-shadow: 4px 4px 5px red;
+}
+
+p::first-line {
+
+    color: red;
+}
+
 /* table style */
 
 table {
@@ -122,6 +138,7 @@ table {
     border-collapse: collapse;
     width: 50%;
     margin: 10px auto;
+    box-shadow: 4px 4px 4px blue;
 }
 
 table caption {
@@ -135,7 +152,30 @@ table caption {
 th, td {
 
     border: 2px solid black;
+    vertical-align: top;
 
+}
+tr:first-child {
+
+    background-color: beige;
+}
+tr:nth-child(even) {
+
+    background-color: azure;
+}
+tr:last-child {
+
+    background-color: aqua;
+}
+
+main div:first-of-type {
+
+    border: 2px solid blue;
+}
+
+main section:last-of-type{
+
+    background-color: beige;
 }
 
 /* footer style */

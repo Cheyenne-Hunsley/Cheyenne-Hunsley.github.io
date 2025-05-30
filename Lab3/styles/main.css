@@ -1,20 +1,21 @@
 html {
     font-family: sans-serif;
     background-image: url('images/bats.gif');
-    width: 100%;
-    height: 100%;
+    background-position: center;
 }
 
 body {
-    margin: 10px;
-    box-shadow: 8px 8px 10px;
+    margin: 0px auto;
+    border: 2px solid black;
+    box-shadow: 5px 5px 6px 10px black;
     background-color: white;
     width: 800px;
 }
 
 header {
     border-bottom: 2px solid black;
-    background-image: linear-gradient(to right, white, orange, black);
+    background-image: linear-gradient(45deg, white, orange, black);
+    height: 160px;
 }
 
 header img {
@@ -25,18 +26,26 @@ header img {
     height: 140px;
 }
 
+header div {
+    padding: 25px;
+    margin-left: 140px;
+}
+
 header h1 {
-    margin-top: 0px;
+    /* display: inline; */
     text-align: left;
     font-size: 50px;
     color: orange;
     font-style: italic;
     text-shadow: 4px 4px 5px black;
-}
+    margin: 0em 0;
 
+}
 header h3 {
-    text-indent:10px;
+text-indent:10px;
     font-size: 30px;
+        margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 
@@ -81,21 +90,11 @@ main section h3 {
     margin: 15px;
 }
 
-main section p:last-child {
-    font-weight: bold;
-}
-
 footer {
-    background-image: linear-gradient(to left, white, orange, black);
+    background-image: linear-gradient(315deg, white, orange, black);
     text-align: center;
     padding: 10px;
     font-size: 15px;
     border-top: 2px solid black;
     
 }
-
-/* Questions to ask*/
-/* How to put the body in the center of page */
-/* How to make the last line bold */
-/* How to adjust header h1 text */
-/* How to make the gradient a degree */
