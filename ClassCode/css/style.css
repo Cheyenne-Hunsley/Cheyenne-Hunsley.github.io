@@ -42,6 +42,9 @@ header h1 {
     font-weight: 500; /*value is ammount of boldness*/
     font-family:Arial, Helvetica, sans-serif; /* type of font*/
     font-style: normal;
+    position: sticky; 
+    /* will always be on the page and doesnt block other elements */
+    top: 0px;
 
 }
 
@@ -153,6 +156,28 @@ main section:last-of-type { /*last type of section element*/
 
     background-color: aquamarine;
 }
+div#first {
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    border: 2px solid blue;
+    position: relative;
+    /* valules after relate to the relative position */
+    top: 130px;
+    left: 150px;
+    margin: 50px;
+
+}
+
+div#child {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    position: absolute;
+    left: 150px;
+    top: 100px;
+
+}
 
 /*footer style*/
 
@@ -160,6 +185,10 @@ footer {
     background-color: beige;
     height: 120px;
     border-top: 2px solid black;
+    position: fixed; 
+    /* Fixed position will not move, will always stay and might block others */
+    bottom: 0px;
+    width: 1000px;
 }
 
 footer p {

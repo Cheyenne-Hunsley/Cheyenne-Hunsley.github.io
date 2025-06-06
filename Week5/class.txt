@@ -1,0 +1,14 @@
+can I use website 
+    testing css properties to see what browser it's supported by.
+
+use google font to get new fonts
+    put the link adress via embeded code
+
+1001fonts website
+.otf 
+@font-face {
+    font-family : "font name";
+    src: url ('/fonts/fontfile.otf)
+}
+
+balsamiq website (a wiring framing tool)
