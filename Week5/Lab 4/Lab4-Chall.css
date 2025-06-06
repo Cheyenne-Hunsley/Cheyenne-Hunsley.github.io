@@ -53,6 +53,7 @@ nav li a:hover {
 #mainPhoto img {
     border-right: 3px solid palevioletred;
     border-left: 3px solid palevioletred;
+    object-fit: contain;
     max-width: 100% auto;
     height: auto;
 
