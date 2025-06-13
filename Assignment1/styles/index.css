@@ -1,28 +1,18 @@
 /* My Fonts */
 @font-face {
-        font-family: littlesample;
-        src: url(fonts/little-sample.regular.otf);
-    }
-@font-face {
     font-family: elure;
-    src: url(fonts/elure.regular.otf);
+    src: url(../fonts/elure.regular.otf);
 }
 
 html {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("images/background.jpg");
+    background-image: url("../images/background.jpg");
     font-family: elure;
-    height: 100%;
 }
 
 body {
-    width: 1050px;
     margin: 0px auto;
-    background-color: #fef7e4;
-    height: 100%;
-    padding: 10px;
-    border: 3px solid #ffd152;
 }
 
 
@@ -48,11 +38,11 @@ header h2 {
 
 /* Profile Picture */
 img {
+    margin-top: -30px;
     float: right;
-    width: 300px;
     border: 8px double #ffd152;
     margin-right: 10px;
-
+    border-radius: 50px;
 }
 
 /* Introduction Header */
@@ -79,7 +69,6 @@ h5 {
 margin-bottom: 30px;
 }
 
-
 /* My current top favourites */
 h6 {
     margin-top: 45px;
@@ -95,6 +84,8 @@ body p {
 section#myFavs p {
     font-size: 22px;
     font-weight: bold;
+    margin-bottom: -3px;
+
 }
 
 ul li {
@@ -121,6 +112,7 @@ footer {
     margin-bottom: -10px;
     margin-right: -10px;
     margin-left: -10px;
+    
 }
 
 footer p {
@@ -128,3 +120,4 @@ footer p {
     text-align: center;
     color: #d5b052;
 }
+
