@@ -1,0 +1,7 @@
+Code within the terminal and function 
+
+git add -A      Prepares files before comitting
+git commit -m "comment"         commits files to your local repository, keep "" and replace comment with update or changes
+git push 'repository link' 'repository branch'      pushes files to your remote repository 
+git merge 'branch name'         merge branch name contents with current branch contents 
+

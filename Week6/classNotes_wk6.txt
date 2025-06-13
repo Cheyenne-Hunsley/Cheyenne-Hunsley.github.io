@@ -1,0 +1,2 @@
+set zone level to 1
+add viewport tag to head section, to make sure it repsonsive 
