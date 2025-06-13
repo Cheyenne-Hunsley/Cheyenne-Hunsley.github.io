@@ -3,6 +3,7 @@
 body {
     font-family: sans-serif;
     text-transform: uppercase;
+
 }
 
 h1 {
@@ -33,8 +34,8 @@ nav a {
 }
 
 #mainPhoto img {
-    object-fit: contain;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 
 }
 

@@ -1,0 +1,123 @@
+/* My Fonts */
+@font-face {
+    font-family: elure;
+    src: url(../fonts/elure.regular.otf);
+}
+
+html {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/background.jpg");
+    font-family: elure;
+}
+
+body {
+    margin: 0px auto;
+}
+
+
+header {
+    font-family: elure;
+    background-image: linear-gradient(#ffd152,#fbe4a5,#fef7e4);
+    margin-top: -40px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+header h1{
+    padding-top: 30px;
+    padding-left: 10px;
+    font-size: 45px;
+    text-shadow: 4px 4px 2px #ac7c01;
+}
+
+header h2 {
+    padding-left: 10px;
+    text-shadow: 2px 2px 4px #ac7c01;
+}
+
+/* Profile Picture */
+img {
+    margin-top: -30px;
+    float: right;
+    border: 8px double #ffd152;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+/* Introduction Header */
+h3 {
+    font-size: 28px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    color: #ac7c01;
+    text-decoration: underline dotted;
+    font-weight: 800;
+}
+
+/* Hobbies, Future Plans, and Top Favs */
+h4, h5, h6 {
+    font-size: 25px;
+    text-decoration: underline dotted;
+    color:#ac7c01 ;
+    font-weight: 550;
+}
+
+/* My future Plans */
+h5 {
+margin-bottom: 30px;
+}
+
+/* My current top favourites */
+h6 {
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+body p {
+    font-size: 20px;
+
+}
+
+/* My favourites List headers */
+section#myFavs p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: -3px;
+
+}
+
+ul li {
+    font-size: 20px;
+    list-style:circle;
+}
+
+/* List bullets */
+ul li::marker{
+color:#ac7c01;
+}
+
+ul li a {
+    color: #ac7c01;
+}
+
+ul li a:hover {
+    color: #ffaa00;
+}
+
+footer {
+    height: 70px;
+    background-image: linear-gradient(#fef7e4,#fbe4a5,#ffd152);
+    margin-bottom: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    
+}
+
+footer p {
+    padding-top: 25px;
+    text-align: center;
+    color: #d5b052;
+}
+

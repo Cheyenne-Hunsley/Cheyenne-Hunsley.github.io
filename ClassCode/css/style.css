@@ -1,5 +1,10 @@
-/* html style */
+/* My fonts */
+/* @font-face {
+    font-family: fontname;
+    src: url(font location in files); 
+} */
 
+/* html style */
 html {
     background-color: rgb(255, 255, 157);
     background-image: url ("images/background.jpg");
@@ -53,6 +58,23 @@ header h2 {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+}
+
+/* Main style */
+
+main section img#feature {
+
+    width: 400px;
+    height: 300px;
+    margin:10px auto;
+    display: block;
+}
+
+/* Class = "intro" */
+.intro {
+
+    border: 2px solid red;
+    background-color: azure;
 }
 
 h2::first-letter {
@@ -178,6 +200,144 @@ div#child {
     top: 100px;
 
 }
+
+
+/* Transform */
+section#transform {
+    background-color: lightblue;
+    border: 2px solid blue;
+    height: 300px;
+    width: 300px;
+    transform: translate(230px, 140px);
+    transform: rotate(30deg);   /* rotate (width 'x' or height 'y') by degree ammount */
+    transform: scaleX(2);   /* Scales width(x) 2times or "scale (0.5, 0.5)" (x,y)*/
+    transform: skew(45deg, 30deg);
+
+}
+
+div.transition {
+    background-color: lightpink;
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    margin: 130px;
+    transition: width 3s;
+    transition-delay: 1s;       /* can only be used for hover feature */
+    transition-timing-function: ease-in;    /* slowly start, ease out slow at end */
+
+}
+
+/* Transition */
+div.transition:hover {
+    width: 500px;
+    height: 500px;
+    transform: rotate(45deg);
+}
+
+/* Animation Styles */
+section#animated {
+    background-color: purple;
+    border: 2px solid blueviolet;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation-name: test;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;  /* how many times the animation repeats */
+    animation-direction: alternate;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+@keyframes test {
+    from {  /* can be changed to percentage instead of from and to (0%, 100%) and values in between */
+        background-color: purple;
+        left: 230px;
+        top: 230px;
+    }
+
+    to {
+        background-color: rgb(228, 134, 228);
+
+    }
+}
+
+/* @keyframes test {
+
+
+    0% {
+        background-color: lightsalmon;
+        left: 30px;
+         top: 20px;
+
+
+    }
+
+    25% {
+         background-color: #7accff;
+        left: 230px;
+        top: 20px;
+
+
+    }
+
+    50% {
+        background-color: #fb7aff;
+        left: 230px;
+        top: 320px;
+
+
+    }
+
+    75% {
+
+        background-color: #ff7a90;
+        left: 30px;
+        top: 320px;
+
+
+    }
+
+    100% {
+
+        background-color: #e9ff7a;
+        left: 30px;
+        top: 20px;
+
+
+    }
+    
+} */
+
+/* Flexbox */
+section#flexbox {
+    background-color: palegoldenrod;
+    width: 980px;
+    height: 700px;
+    border: 2px solid yellow;
+    margin: 450px, 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    flex-flow: row wrap;
+
+}
+
+section#flexbox div.item1 {
+    background-color: lightcoral;
+    order: 4; /* changes the order of where it sits */
+    /* flex-basis: 280px; */
+    flex-grow: 0;
+    flex-shrink: 3; /* this box will be a 1/3 of the size of the other boxes */
+    flex: 0, 3;
+    align-self: center;
+}
+
+
+
 
 /*footer style*/
 
