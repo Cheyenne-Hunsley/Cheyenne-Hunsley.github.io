@@ -1,0 +1,50 @@
+/* My Fonts */
+@font-face {
+    font-family: Transcity;
+    src: url(../Fonts/transcity.regular.otf);
+}
+@font-face {
+    font-family: Kugile;
+    src: url(../Fonts/kugile.regular.ttf);
+}
+@font-face {
+    font-family: Oliver Regular;
+    src: url(../Fonts/oliver.a.ttf);
+}
+@font-face {
+    font-family: Oliver Italic;
+    src: url(../Fonts/oliver.oblique.ttf);
+}
+
+html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#8BB5A5, #377771, #2B6667);
+}
+
+h1 {
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 80px;
+    font-family: Transcity;
+}
+
+h2 {
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 40px;
+    font-family: Kugile;
+}
+
+h3{
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 30px;
+    font-family: Oliver Regular;
+}
+
+p {
+    padding-right: 50px;
+    padding-left: 50px;
+    font-family: Oliver Regular;
+}

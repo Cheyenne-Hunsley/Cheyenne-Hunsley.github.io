@@ -38,9 +38,28 @@ header h3 {
 	font-size: 130%;
 	font-style: italic;
 }
+
 header img {
 	float: left;
 	padding: 0 30px;
+	animation-name: bounce;
+	animation-duration: 0.5s;
+	animation-iteration-count: 8;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+}
+
+@keyframes bounce {
+	from{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	to {
+		padding-left: 50px;
+		padding-right: 30px;
+		
+	}
 }
 
 .shadow {
@@ -81,24 +100,8 @@ article img {
 	float: right;
 	margin: .5em 0 1em 1em;
 	border: 1px solid black;
-	animation-name: bounce;
-	animation-duration: 0.5s;
-	animation-iteration-count: 8;
-	animation-timing-function: ease-in;
-	animation-direction: alternate;
 }
 
-@keyframes bounce {
-	from{
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-
-	to {
-		margin-right: -20px;
-		
-	}
-}
 
 /* the styles for the aside */
 aside {
