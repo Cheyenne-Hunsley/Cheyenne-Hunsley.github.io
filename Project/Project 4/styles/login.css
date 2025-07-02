@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Transcity;
+    src: url(../Fonts/transcity.regular.otf);
+}
+@font-face {
+    font-family: Kugile;
+    src: url(../Fonts/kugile.regular.ttf);
+}
+@font-face {
+    font-family: Oliver Regular;
+    src: url(../Fonts/oliver.a.ttf);
+}
+@font-face {
+    font-family: Oliver Italic;
+    src: url(../Fonts/oliver.oblique.ttf);
+}
+
+html {
+    background-image: linear-gradient(#Dff2D8, #8BB5A5, #377771, #2B6667, #1E555C);
+    height: 100%;
+    font-family: Oliver Regular;
+}
+
+header h1{
+    font-family: Transcity;
+    font-size: 100px;
+}
+
+#profileicon {
+    width: 3%;
+    height: 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header button {
+    background: #1E555C;
+    color: #Dff2D8 ;
+
+}
+
+nav {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav ul {
+    width: 80%;
+    height: 40px;
+    border: 2px solid #1E555C;
+    background-color: #377771;
+    display: flex;
+    gap: 300px;
+    font-family: Kugile;
+}
+
+nav ul li {
+    margin-top: 8px;
+    list-style: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav ul li a{
+    color: #22181C;
+    text-decoration: none;
+}
+
+footer {
+    border: #22181C;
+    background-color: #1E555C;
+    position: static;
+    bottom: 0;
+}

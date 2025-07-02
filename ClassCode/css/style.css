@@ -26,7 +26,7 @@ header {
     height: 220px;
     background-color: beige;
     border-bottom: 2px solid black;
-    background-image: linear-gradient(to right, white, pink, red, black); /*to reight can be replaced with a degree amount*/
+    background-image: linear-gradient(to right, white, pink, red, black); /*to right can be replaced with a degree amount*/
 
 }
 /* Website Logo Image*/
@@ -178,6 +178,7 @@ main section:last-of-type { /*last type of section element*/
 
     background-color: aquamarine;
 }
+
 div#first {
     width: 400px;
     height: 400px;
@@ -334,6 +335,16 @@ section#flexbox div.item1 {
     flex-shrink: 3; /* this box will be a 1/3 of the size of the other boxes */
     flex: 0, 3;
     align-self: center;
+}
+
+section#multiple {
+    border: 2px solid black;
+    background-color: lightgray;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 2px solid lightslategray;
+    column-span: all; 
+
 }
 
 

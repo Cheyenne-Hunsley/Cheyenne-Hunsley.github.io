@@ -1,0 +1,6 @@
+Comments for Team Members
+make the page look as similar to the wireframe as possible
+logo must be placed in images folder and html image input must be changed in html file
+add remmeber me check box for login
+add subsrcibe and agree to terms and conditions checkbox for sign up 
+add shadow 
