@@ -4,18 +4,24 @@
     src: url(font location in files); 
 } */
 
+* {
+    box-sizing: border-box;
+ }
+
 /* html style */
 html {
-    background-color: rgb(255, 255, 157);
-    background-image: url ("images/background.jpg");
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 } 
 
 /* body style*/ 
 body{ 
-    background-color: white;
     border: 2px solid black;
-    width: 1000px;
+    width: 1200px;
+    background-color: white;
     padding: 2px; /*the space within the border between section/text and border, the value of padding moves clockwise (ie 12px = top, 6px = right...)*/
     margin: 0px auto; /*the space outside the border*/
 }
@@ -23,12 +29,12 @@ body{
 /* Header Style */
 header {
 
-    height: 220px;
-    background-color: beige;
     border-bottom: 2px solid black;
-    background-image: linear-gradient(to right, white, pink, red, black); /*to right can be replaced with a degree amount*/
+    height: 220px;
+    background-image: linear-gradient(45deg, white, pink, red, black); /*to right can be replaced with a degree amount*/
 
 }
+
 /* Website Logo Image*/
 
 header img {
@@ -36,28 +42,30 @@ header img {
     height: 90px;
     border-radius:40px ; /*rounded corner for borders*/
     float: left;
-    margin: 7px;
 }
 
 /*Heading style isnide header*/
 
 header h1 {
-    color: darkgreen;
-    font-size: 28px;
-    font-weight: 500; /*value is ammount of boldness*/
+    color: darkcyan;
     font-family:Arial, Helvetica, sans-serif; /* type of font*/
-    font-style: normal;
-    position: sticky; 
+    font-size: 30px;
+    font-style: italic;
+    text-align: left;   /* Where text is positioned */
+    padding: 30px;
+    margin-block-start: 0em;   /* default em value is listed in inspection of webpage */
+    /* font-weight: 500; value is ammount of boldness */
+    /* position: sticky;  */
     /* will always be on the page and doesnt block other elements */
-    top: 0px;
+    /* top: 0px; */
 
 }
 
 header h2 {
-    color: darkgreen;
-    font-size: 18px;
+    color: darkcyan;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
+    text-align: left;
+    padding: 10px;
 }
 
 /* Main style */
@@ -78,96 +86,148 @@ main section img#feature {
 }
 
 h2::first-letter {
+    /* you can also do first-line for first line of text */
     font-size: 45px;
     text-shadow: 4px 4px 5px red; /*horrizontal shadow, vertical shadow, bluriness of shadow, (optional) wrap around shadow ammount(on left)  (higher number more blurry), and colour*/
     
 }
 
-p::first-line {
-    color: red;
-}
-
+/* main navbar style */
 nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: lightcyan;
+    overflow: hidden;
 }
 
 nav ul li {
-    display: inline;
-    margin: 15px;
+    float: left;
 }
 
-nav ul li a {
+/* Drop Down Styles */
+nav ul li a, .dropbtn  {
+
+    font-size: 23px;
+    color: black;
     text-decoration: none;
-    font-size: 25px;
+    text-align: center;
+    display: inline-block;
+    padding: 13px 15px; 
 }
 
-nav ul li a:link {  /*adjusts how the text link looks*/
-    color: blue;
+nav ul li.dropdown {
+
+    display: inline-block;
 }
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 3px 3px 2px black;
+    background-color: aliceblue;
+    z-index: 1;
+}
+
+nav ul li a:hover, .dropdown:hover .dropbtn {
+
+    background-color: aquamarine;
+}
+
+.dropdown-content a {
+
+    display: block;
+    padding: 13px 15px;
+    color: darkgreen;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+
+    display:block;
+}
+
+.dropdown-content a:hover {
+
+    background-color: #5de7e7;
+}
+
+/* nav ul li a:link {  adjusts how the text link looks
+    color: blue;
+} */
 
 nav ul li a:visited {   /*adjusts how the link looks when clicked*/
-    color: darkblue;
+    color: red;
 }
 
-nav ul li a:hover { /*ajusts how the link looks when you hover it*/
-    color: aqua;
-}
+/* nav ul li a:hover { ajusts how the link looks when you hover it
+    color: darkmagenta;
+    text-decoration: underline;
+} */
 
 nav ul li a:active {    /*different states of a link; ie active, hover, etc..*/
+    color:yellowgreen;
     text-decoration: none;
-    color:aquamarine
 }
 
-main
-{
-    padding: 2px; 
+body p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    color: darkred;
 }
 
-main section img#first {    /*#first is the img id*/
-
-    width: 400px;
-    height: 300px;
-    margin: 7px auto;
-    display: block;
-}
-
-.intro {
-    border: 2px solid black;
+a {
+    color: blue;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 /*table style*/
 
 table {
     border: 2px solid black;
-    border-collapse: collapse;
     width: 50%;
     margin: 10px auto;
-    box-shadow: 4px 4px 5px black;
+    border-collapse: collapse;
+    /* box-shadow: 4px 4px 5px black; adds a shadow to the box */
 }
 
 table caption {
-    font-style: italic;
-    color: red;
-    font-size:18px ;
     font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-style: italic;
+    font-size:23px ;
+    text-shadow: 13px 3px 15px #db4d4d;
 }
 
 th, td {
     border: 2px solid black;
-    vertical-align: top;    /*where the text vertically aligns*/
+    font-size: 20px;
+    /* vertical-align: top;    where the text vertically aligns */
 }
-
-tr:first-child {    /*changes the first row of the table*/
+tr:hover {
     background-color: beige;
 }
 
-tr:nth-child(2) {   /*for specifc rows (numbers or even/odd can be written in bracket) */
-    background-color: bisque;
+tr:first-child {    /*changes the first row of the table*/
+    background-color: purple;
 }
 
 tr:last-child {     /* changes the last row of a table */
-    background-color: blanchedalmond;
+    background-color: lightpink;
 }
+
+tr:nth-child(2) {   /*for specifc rows (numbers or even/odd can be written in bracket) */
+    background-color: lightskyblue;
+}
+
+tr:nth-of-type(3){
+    background-color: darkgray;
+}
+
 
 main div:first-of-type {    /*first type of div element*/
 
@@ -179,37 +239,39 @@ main section:last-of-type { /*last type of section element*/
     background-color: aquamarine;
 }
 
+/* position style */
+
 div#first {
-    width: 400px;
-    height: 400px;
-    background-color: beige;
+    margin: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
     border: 2px solid blue;
     position: relative;
     /* valules after relate to the relative position */
-    top: 130px;
-    left: 150px;
-    margin: 50px;
+    left: 120px;
+    top: 30px;
 
 }
 
 div#child {
     width: 100px;
     height: 100px;
-    background-color: violet;
+    background-color: aqua;
     position: absolute;
-    left: 150px;
+    left: 50px;
     top: 100px;
 
 }
 
 
-/* Transform */
+/* Transform and Transition Style */
 section#transform {
-    background-color: lightblue;
-    border: 2px solid blue;
-    height: 300px;
+    background-color: aqua;
     width: 300px;
-    transform: translate(230px, 140px);
+    height: 300px;
+    border: 2px solid blue;
+    /* transform: translate(230px, 140px); */
     transform: rotate(30deg);   /* rotate (width 'x' or height 'y') by degree ammount */
     transform: scaleX(2);   /* Scales width(x) 2times or "scale (0.5, 0.5)" (x,y)*/
     transform: skew(45deg, 30deg);
@@ -217,18 +279,17 @@ section#transform {
 }
 
 div.transition {
-    background-color: lightpink;
-    border: 2px solid red;
-    width: 200px;
-    height: 200px;
+    background-color: #ff7700;
+    width: 300px;
+    height: 300px;
     margin: 130px;
-    transition: width 3s;
+    transition: all 3s;
     transition-delay: 1s;       /* can only be used for hover feature */
-    transition-timing-function: ease-in;    /* slowly start, ease out slow at end */
+    transition-timing-function: ease-out;    /* ease-in slowly start, ease out slow at end */
 
 }
 
-/* Transition */
+
 div.transition:hover {
     width: 500px;
     height: 500px;
@@ -237,11 +298,11 @@ div.transition:hover {
 
 /* Animation Styles */
 section#animated {
-    background-color: purple;
-    border: 2px solid blueviolet;
+    background-color: lightsalmon;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    border: 2px solid #6f2330;
     animation-name: test;
     animation-duration: 5s;
     animation-delay: 3s;
@@ -313,12 +374,35 @@ section#animated {
     
 } */
 
+
+section#multiple {
+    border: 2px solid black;
+    background-color: lightcyan;
+    margin: 420px 2px;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 4px solid blue;
+    height: auto;
+    column-fill: balance; 
+
+}
+
+section#multiple h2 {
+    column-span: all;
+    /* the amount of columns a header will span in terms of space on top the column */
+}
+
+section#multiple p {
+    font-size: 20px;
+}
+
+
 /* Flexbox */
 section#flexbox {
     background-color: palegoldenrod;
+    border: 2px solid yellow;
     width: 980px;
     height: 700px;
-    border: 2px solid yellow;
     margin: 450px, 50px;
     display: flex;
     flex-direction: row-reverse;
@@ -337,18 +421,28 @@ section#flexbox div.item1 {
     align-self: center;
 }
 
-section#multiple {
-    border: 2px solid black;
-    background-color: lightgray;
-    column-count: 3;
-    column-gap: 20px;
-    column-rule: 2px solid lightslategray;
-    column-span: all; 
+/* Form style */
 
+form {
+    border: 2px solid black;
+    width: 600px;
+    margin: 5px auto;
 }
 
+input[type = "submit"] {
+    background-color: antiquewhite;
+    border: 2px solid blue;
+    width: 87px;
+    color: black;
+    display: block;
+    margin: 5px auto;
+    font-size: 21px;
+}
 
-
+form label {
+    font-size: 21px;
+    color: #37373d;
+}
 
 /*footer style*/
 

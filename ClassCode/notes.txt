@@ -1,0 +1,5 @@
+Clear function
+    clear specifies on whihc side of an element floating elements are not allowed to float 
+    ex. footer {
+        clear: both or right or left;
+    }

@@ -12,16 +12,23 @@
         <link rel="stylesheet"  href="css/style.css"    type="text/css">
     </head>
     <body>
-        <header>
-            <h1>Welcome to my Website</h1>
+        <header id="top">
             <img src="images/logo.jpg" alt="website logo"><!--src="file folder/file name"    alt=description-->
-            <h2>Welcome to my Page</h2>
+            <h1>My Little Store Page</h1>
+            <h2>Welcome to my Website</h2>
         </header>
         <nav>
                 <ul> 
                     <li><a href="index.html">Homepage</a></li> 
                     <li><a href="about.html">About</a></li>
-                    <li><a href="index.html">Contact</a></li>
+                    <li class="dropdown"><a href="news.html" class="dropbtn">News</a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
         </nav>
         <main>
@@ -29,28 +36,29 @@
                 <caption>My Weekly Schedule</caption>
                 <thead>
                     <tr>
-                        <th>Name</th>   <!--Table header-->
-                        <th>Type</th>
-                        <th>Date</th>
+                        <th>Course</th>   <!--Table header-->
+                        <th>Course Type</th>
+                        <th>Day</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Web Programming</td>    <!--Table data-->
                         <td>1st Term</td>
-                        <td>Wednesday</td>
+                        <td rowspan="2">Wednesday</td>
+                        <!-- wednesday will span 2 columns -->
                     </tr>
                     <tr>
                         <td>Database Design</td>
                         <td>1st Term</td>
-                        <td>Thursday</td>
+                        <!-- <td>Thursday</td> -->
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
                         <td>Operating Systems</td>
                         <td>1st Term</td>
-                        <td>Monday</td>
+                        <td>Tuesday</td>
                     </tr>
                 </tfoot>
             </table>
@@ -77,6 +85,8 @@
                     <source src="media/track.ogg" type="audio/ogg">
                 </audio>
             </section>
+
+            <!-- Flexbox -->
             <section id="flexbox">
                 <div class="Item1">Item 1</div>
                 <div class="Item2">Item 2</div>
@@ -90,14 +100,27 @@
                 <div class="Item10">Item 10</div>
                 
             </section>
-            <section>
-                <p></p>
+
+            <!-- Columns -->
+            <section id="multiple">
+                <h2>The topid of multiple column layout.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vitae fugit possimus omnis culpa? Voluptatibus ducimus atque minus excepturi illo quod qui aut impedit. Totam tenetur nulla sit assumenda quia?
+                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod soluta alias omnis aliquam explicabo, consectetur consequatur, velit voluptatem, nemo assumenda sit nihil hic quo ut laboriosam aliquid inventore labore?
+                    
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quasi ab sed perspiciatis aspernatur cupiditate aliquid repellendus ipsa suscipit, alias minima officia soluta deserunt iusto quaerat natus rerum, tenetur amet!
+                    
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum fugit nesciunt dicta itaque vel sint labore minima reiciendis earum doloremque! Repudiandae eaque excepturi quasi modi, dolor a perferendis distinctio ex?
+                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatem sed quas quae doloremque ipsam rem, dolorem provident fugiat aut optio laborum amet voluptate possimus ut fuga adipisci sapiente suscipit.</p>
             </section>
 
         </main>
         <footer>
             <p>Author: Cheyenne</p>
             <p>Copyright &copy; reserved 2025</p>
+            <p><a href="#top">Back to Top</a></p>
+            <p>Terms and Conditions</p>
         </footer>
 
     </body>
