@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="./images/" alt="logo"  id="logo">
+        <img src="./images/logo.png" alt="logo"  id="logo">
         <h1>Bookaneers</h1>
         <button type="button">Login/Sign Up</button>
         <img src="./images/profileicon.png"  alt="profile picture" id="profileicon">
@@ -23,32 +23,34 @@
         </nav>
 
     </header>
-    <section id="Login">
-        <h2>Log In</h2>
-        <form>
-            <label>Username:</label>
-            <input type="text" id="Username">
-            <label>Password</label>
-            <input type="text" id="Password">
-        </form>
-    </section>
-    <h2>Sign Up</h2>
-    <section id="SignUp">
-        <form>
-            <label>Email:</label>
-            <input type="email" id="Email" placeholder="user@email.com">
-            <label>Username:</label>
-            <input type="text" id="Username">
-            <label>Password</label>
-            <input type="text" id="Password">
-            <p>must contain</p>
-            <ul>
-                <li>at least 8 Characters</li>
-                <li>Upper and Lower case</li>
-                <li>at least 1 Special Character</li>
-            </ul>
-        </form>
-    </section>
+    <main>
+        <section id="Login">
+            <h2>Log In</h2>
+            <form>
+                <label>Username:</label>
+                <input type="text" id="Username" class="input">
+                <label>Password</label>
+                <input type="text" id="Password" class="input">
+            </form>
+        </section>
+        <section id="SignUp">
+            <h2>Sign Up</h2>
+            <form>
+                <label>Email:</label>
+                <input type="email" id="Email" placeholder="user@email.com" class="input">
+                <label>Username:</label>
+                <input type="text" id="Username" class="input">
+                <label>Password</label>
+                <input type="text" id="Password" class="input">
+                <p>must contain</p>
+                <ul>
+                    <li>at least 8 Characters</li>
+                    <li>Upper and Lower case</li>
+                    <li>at least 1 Special Character</li>
+                </ul>
+            </form>
+        </section>
+    </main>
 </body>
 <footer>
     <p>Contact Us</p>

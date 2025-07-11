@@ -6,4 +6,7 @@ git push 'repository link' 'repository branch'      pushes files to your remote 
 git merge 'branch name'         merge branch name contents with current branch contents 
 git clone "remote repo address" --branch 'branch name' folder name/   creates a clone of the remote repository branch into current folder and gives it folder name
 git branch -m 'new name'        renames a branch within the local repository
+git config --global init.defualtBranch 'branch name'        configures all branches to branch name
+git config --global --get init.defaultBranch      get the defualt name of branches
+git branch --list       lists all current branches in your local repository and highlights current working branch 
 

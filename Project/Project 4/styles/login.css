@@ -21,37 +21,67 @@ html {
     font-family: Oliver Regular;
 }
 
+body {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #8BB5A540;
+    border: 2px solid #1E555C;
+    /* can we make it in vertically centered? */
+
+}
+
+header {
+    border-bottom: 2px solid #22181C;
+
+}
+
 header h1{
+    color: #22181C;
     font-family: Transcity;
     font-size: 100px;
+    
+}
+
+#logo {
+    position: relative;
+    top: -10px;
+    float: left;
+    width: 200px;
 }
 
 #profileicon {
-    width: 3%;
-    height: 5%;
-    position: absolute;
-    top: 0;
-    right: 0;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -230px;
+    left: 1010px;
 }
 
 header button {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
     background: #1E555C;
     color: #Dff2D8 ;
-
+    position: relative;
+    top: -250px;
+    left: 1000px;
 }
 
 nav {
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 80%;
+    margin: 10px auto;
+    margin-top: -100px;
 }
 
 nav ul {
-    width: 80%;
+    border-radius: 10px;
     height: 40px;
     border: 2px solid #1E555C;
     background-color: #377771;
     display: flex;
-    gap: 300px;
+    justify-content: space-around;
+    /* gap: 300px; */
     font-family: Kugile;
 }
 
@@ -67,9 +97,32 @@ nav ul li a{
     text-decoration: none;
 }
 
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.input {
+    display: block;
+}
+
+form label {
+    font-size: 20px;
+}
+
+section:nth-of-type(2) {
+    border-left: 1px solid black;
+    padding-left: 25%;
+}
+
+
+
 footer {
     border: #22181C;
     background-color: #1E555C;
     position: static;
-    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #1E555C;
 }
