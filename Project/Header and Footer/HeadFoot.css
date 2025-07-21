@@ -1,5 +1,3 @@
-/* Same for every Page */
-
 @font-face {
     font-family: Transcity;
     src: url(/Project/Fonts/transcity.regular.otf);
@@ -17,43 +15,9 @@
     src: url(/Project/Fonts/oliver.oblique.ttf);
 }
 
-@media (max-width: 1024px) {
-
-    /* stack header elements vertically */
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    header h1 {
-        margin-top: -100px;
-    }
-
-    /* allow nav items to wrap and center them */
-
-    nav ul {
-        width: 100%;
-    }
-
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #signUp {
-        border-left: none;
-        border-top: 1px solid #1E140B;
-        padding-top: 20px;
-        margin-top: 20px;
-        width: 100%;
-    }
-}
-
-
 html {
     background-image: linear-gradient(#C2C5AA, #A4AC86, #656D4A, #414833);
-    /* height: 100%; */
+    height: 100%;
     font-family: Oliver Regular;
 }
 
@@ -62,7 +26,6 @@ body {
     width: 1200px;
     background-color: #c2c5aa35;
     border: 2px solid #333D29;
-
 }
 
 header {
@@ -93,22 +56,18 @@ header h1{
 }
 
 header button {
-    position: relative;
-    top: -250px;
-    left: 800px;
-    width: 120px;
-    height: 50px;
-}
-
-.brownButton {
     border: 1px solid #1E140B;
     border-radius: 7px;
     box-shadow: 1px 1px 2px #1E140B;
+    width: 120px;
+    height: 50px;
     font-size: 20px;
     background: #A68A64;
-    color: #1E140B;
+    color: #1E140B ;
+    position: relative;
+    top: -250px;
+    left: 800px;
 }
-
 
 nav {
     width: 80%;
@@ -139,11 +98,6 @@ nav ul li {
 
 nav ul li a {
     margin-top: -5px;
-
-}
-
-ul {
-    list-style-position: inside;
 
 }
 
@@ -186,43 +140,6 @@ nav ul li a:hover, .dropdown:hover {
 .dropdown:hover .dropdown-content {
     border: 1px solid #1E140B;
     display:block;
-}
-
-/* End of same for every page */
-
-main {
-    display: flex;
-    justify-content: space-around;
-}
-
-.input {
-    display: inline-block;
-    width: 50%;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 10px;
-}
-
-.passwordRequirements {
-}
-
-#login {
-    width: 100%;
-    text-align: center;
-}
-
-#loginButton {
-    margin: 2%;
-}
-
-#signUp {
-    width: 100%;
-    text-align: center;
-    border-left: 1px solid #1E140B;
-}
-
-form label {
-    font-size: 20px;
 }
 
 footer {

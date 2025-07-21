@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./styles/normalize.css"   type="text/css">
+    <!-- <link rel="stylesheet"  href="./styles/main.css"    type="text/css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="icon"    href="./images/Favicon2/favicon.ico"     type="image/x-icon">
+    <title>Personal Page</title>
+    <!-- Personal Page with Bootstrap -->
+</head>
+<body class="container-fluid">
+    <header>
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/MyLogoEdit.png"  alt="My Logo"   id="logo" width="200">
+                </div>
+                <div class="col text-center mt-5">
+                    <h2>Welcome to my Personal Profile Page!~</h2>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Explore!~</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About Me
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">About Me</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                    <li><a class="dropdown-item" href="#">Social Media</a></li>
+                </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <section id="intro">
+        <div class="container ">
+            <img src="./images/ProfilePic.jpeg" alt="Picture of Me" class="image-fluid img-thumbnail rounded mx-auto d-block" id="ProfilePic" width="200">
+        </div>
+        <h2 class="text-center">Cheyenne Hunsley</h2>
+        <p class="text-center">Hi, my name is Cheyenne Hunsley. I am a 24 year old student residing in Toronto, ON, Canada.</p>
+    </section>
+    <section class="text-center">
+        <h2 class="mt-5">~About Me~</h2>
+        <p>I am a student at Humber College North campus, and I am currenlty studying computer programming. An ideal future job for me would be a position with mostly remote work. Something with enough felxibility that I can work wherever my future takes me. I personally have an interest in games, so becoming a game designer or devloper would be a cool. I used to be really interested in drawing and design so maybe I would love to impliment that into game deign or development.</p>
+        <h4 class="mt-5">My Hobbies</h4>
+        <ul class="list-group list-group-flush"> <!--unorganized List of my hobbies-->
+            <li class="list-group-item">Gamming</li>
+            <li class="list-group-item">Reading</li>
+            <li class="list-group-item">Singing</li>
+            <li class="list-group-item">Eating</li>
+            <li class="list-group-item">Sleeping</li>
+        </ul>
+    </section>
+    <section class="conatiner mt-5">
+        <div class="row">
+            <div class="col">
+                <section id="skills">
+                    <h3>My Skills</h3>
+                        <p class="text-center mt-2">Bootstrap Knowledge</p>
+                        <div class="progress" role="progressbar" aria-label="Bootstrap Knowledge" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar text-bg-success" style="width: 10%">10%</div>
+                        </div>
+                        <p class="text-center mt-2">Javascript Knowledge</p>
+                        <div class="progress" role="progressbar" aria-label="Javascript Knowledge" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar text-bg-danger" style="width: 20%">20%</div>
+                        </div>
+                        <p class="text-center mt-2">CSS & HTML Knowledge</p>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar text-bg-warning" style="width: 20%">20%</div>
+                        </div>
+                        <p class="text-center mt-2">Fun Energy</p>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar text-bg-info" style="width: 100%">100%</div>
+                    </div>
+                </section>
+            </div>
+            <div class="col">
+                <h3 class="container-fluid text-center">Current & Past Projects</h3>
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="width: 200px;">
+                            <img src="./images/Bookaneers_Unedited.png" class="card-img-top" alt="bookaneers logo">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Bookaneers Website</h5>
+                                    <p class="card-text text-center">A book sharing website for bookworms and new readers</p>
+                                    <a href="bookaneers.html" class="btn btn-danger">Website Link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 200px;">
+                            <img src="./images/MisteryFalls_Logo.png" class="card-img-top" alt="mistery falls logo">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Mistery Falls Game</h5>
+                                    <p class="card-text text-center">A text-based choose your own adventure style mystery game game </p>
+                                    <a href="misteryfalls.html" class="btn btn-success">Game Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <footer class="container border border-secondary">
+        <p>Email: <a href="cheyenne.hunsley@gmail.com" target="_blank" class="text-primary">cheyenne.hunsley@gmail.com</a></p>
+        <p>Phone: 647-993-2439</p>
+        <p>GitHub: <a href="https://github.com/Cheyenne-Hunsley" target="_blank" class="text-success">Cheyenne-Hunsley</a></p>
+        <p>&copy copyright CheyenneHunsley</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>

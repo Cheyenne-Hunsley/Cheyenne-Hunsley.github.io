@@ -1,0 +1,44 @@
+/* My Colour Codes */
+/* White - #F9EAE1 */
+/* Grey - #AA998F */
+/* Pink - #CC8B86 */
+/* Yellow - #D1BE9C */
+/* Dark Pink - #7D4F50 */
+/* Font - #3D2B29 */
+
+@font-face {
+    font-family: Elure;
+    src: url(../Fonts/elure.regular.otf);
+}
+
+html {
+    background-image: linear-gradient(#CC8B86, #F9EAE1, #CC8B86);
+    font-family: Elure;
+    color: #3D2B29;
+}
+
+body {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #f9eae1ab;
+}
+
+header {
+    height: 20%;
+    display: block;
+}
+
+#logo {
+    float: left;
+    width: 200px;
+}
+
+nav ul {
+    color: #F9EAE1;
+    background-color: #7D4F50;
+    border: solid 2px #3D2B29;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+

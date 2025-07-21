@@ -1,0 +1,189 @@
+html {
+    font-family: sans-serif;
+    background-image: url('../images/bats.gif');
+    background-position: center;
+    /* height: 80%; */
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: none;
+        border: none;
+        font-size: 0.5em;
+    }
+}
+
+@media  screen and (max-width: 479px) {
+    header {
+        font-size: 0.5em;
+    }
+
+    body h1{
+        font-size: 0.5em;
+    }
+}
+
+body {
+    margin: auto;
+    border: 2px solid black;
+    box-shadow: 5px 5px 6px 10px black;
+    background-color: white;
+    width: 1100px;
+
+}
+header {
+    border-bottom: 2px solid black;
+    background-image: linear-gradient(45deg, white, orange, black);
+    height: 200px;
+}
+
+header img {
+    padding-left: 15px;
+    padding-top: 10px;
+    float: left;
+    width: 140px;
+    height: 140px;
+}
+
+header div {
+    padding: 25px;
+    margin-left: 140px;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+    /* font-style: italic; */
+    /* text-shadow: 4px 4px 5px black; */
+    margin: 0em 0;
+
+}
+header h3 {
+text-indent:10px;
+    font-size: 30px;
+        margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+header nav ul {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    /* padding-right: 50px;
+    padding-left: 50px; */
+}
+
+header nav ul li a{
+    display: block;
+    padding: 13px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header nav ul li a:visited{
+    color: orange;
+}
+
+header nav ul li a:hover{
+    background-color: gray;
+}
+
+main {
+    display:flex;
+}
+
+section#aside {
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 20%;
+}
+
+section#aside ul li {
+    margin-top: 20px;
+    width: 130px;
+}
+
+section#aside ul li a {
+    display: block;
+    width: 140px;
+    padding: 15px 10px;
+    border: 3px solid black;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+section#email {
+    width: 80%;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+
+section#email legend {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset input {
+    width: 80%;
+    height: 30px;
+}
+
+input#fName {
+    position: relative;
+    left: 8px;
+}
+
+input#lName {
+    position: relative;
+    left: 9px;
+}
+
+
+input#email {
+    position: relative;
+    left: 50px;
+}
+
+input#zipcode {
+    position: relative;
+    left: 30px;
+}
+
+fieldset label {
+    display: inline-block;
+    font-size: 18px;
+}
+
+button#subButton {
+    margin-left: 103px;
+    margin-top: 10px;
+    background-color: orange;
+    color: black;
+    border: 3px solid black;
+    font-size: 20px;
+    width: 150px;
+    
+}
+
+footer {
+    clear: both;
+    background-image: linear-gradient(315deg, white, orange, black);
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    border-top: 3px solid black;
+}
