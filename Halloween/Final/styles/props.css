@@ -1,0 +1,148 @@
+html {
+    font-family: sans-serif;
+    background-image: url('../images/bats.gif');
+    background-position: center;
+    /* height: 80%; */
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 155px 1fr 70px;
+    grid-template-areas:
+    "head head"
+    "aside main"
+    "foot foot";
+    margin: auto;
+    border: 2px solid black;
+    box-shadow: 5px 5px 6px 10px black;
+    background-color: white;
+    width: 700px;
+}
+
+header {
+    border-bottom: 2px solid black;
+    background-image: linear-gradient(45deg, white, orange, black);
+    /* height: 155px; */
+    grid-area: head;
+}
+
+header img {
+    padding-left: 15px;
+    padding-top: 10px;
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+header div {
+    padding: 25px;
+    margin-left: 100px;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 35px;
+    color: black;
+    font-weight: 700;
+    /* font-style: italic; */
+    /* text-shadow: 4px 4px 5px black; */
+    margin: 0em 0;
+
+}
+header h3 {
+    text-indent:10px;
+    font-size: 20px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+header nav {
+    grid-area: navbar;
+}
+
+header nav ul {
+    height: 30px;
+    display: grid;
+    grid-template: 30px / 15% 20% 15% 25% 15%;
+    gap: 15px;
+    /* justify-content: space-around; */
+    background-color: black;
+}
+
+header nav ul li a{
+    text-align: center;
+    display: block;
+    padding: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header nav ul li a:visited{
+    /* color: orange; */
+}
+
+header nav ul li a:hover{
+    background-color: gray;
+}
+
+section#aside {
+    grid-area: aside;
+}
+
+section#aside ul {
+    margin-left: -20px;
+    /* width: 20%; */
+    margin-top: 30px;
+}
+
+section#aside ul li {
+    margin-bottom: 5px;
+}
+
+section#aside ul li a {
+    text-align: center;
+    display: block;
+    width: 100px;
+    padding: 12px 5px;
+    border: 3px solid black;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+section#props {
+    grid-area: main;
+    margin-top: 10px;
+    /* width: 80%; */
+    margin-left: 30px;
+    line-height: 1.0;
+}
+
+section#props h3 {
+    margin: 0px;
+}
+
+section#props a {
+    color: orange;
+    text-decoration: none;
+}
+
+section#props p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* section#props */
+
+footer {
+    grid-area: foot;
+    background-image: linear-gradient(315deg, white, orange, black);
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    border-top: 3px solid black;
+}
