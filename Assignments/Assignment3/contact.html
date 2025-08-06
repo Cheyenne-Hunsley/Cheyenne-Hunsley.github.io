@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/contact.css" type="text/css">
+    <link rel="icon" href="images/Favicon3/favicon.ico" type="image/x-icon">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <section id="head">
+            <img src="images/Logo_Img/Favicon_Logo2.png" alt="website logo" id="logo">
+            <h3>Cheyenne Hunsley</h3>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" id="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact" class="container-fluid">
+            <h1>Contact Info:</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" aria-describedby="passHelp">
+                    <div id="passHelp" class="form-text">Passwords must contain the following:
+                        <br>At least 8 Characters.
+                        <br>At least 1 special Character.
+                        <br>Upper and lower case letters</div>
+                </div>
+                <div>
+                   <label for="comment box">Additional Information:</label><br>
+                   <textarea id="commentBox" name="comment" rows="5" cols="40" placeholder="write your inquiry here"></textarea><br>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="image" class="container-fluid">
+            <img src="./images/contact_ImgNB.png" alt="contact image" id="contactImg" class="img-fluid">
+        </section>
+    </main>
+        <footer class="container-fluid">
+            <p id="copy">&copy 2025 Cheyenne Hunsley</p>
+            <p id="message">Built with love & lack of sleep</p>
+        <!-- <p id="email"><a href="mailto:cheyenne.hunsley@gmail.com">Email</a></p> -->
+        <!-- <p id="insta"><a href="https://instagram.com/cheyenne.hunsley" target="blank">Instagram</a></p> -->
+    </footer>
+</body>
+</html>

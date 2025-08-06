@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivals</title>
+    <style>
+        html {
+            background-image: url(./images/bg_img2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100%;
+            min-width: 100%; 
+            
+        }
+        body {
+            margin: 0px auto;
+            background-color: #8bbdc483;
+            width: 1050px;
+            min-height: 200px;
+            padding: 20px 20px 0px;
+            border: 2px solid #8bbdc4;
+            border-radius: 20px;
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: 350px 350px 350px; 
+            grid-template-areas: 
+            "head head head"
+            "button1 button2 button3"
+            "halloween easter holiday"
+            "foot foot foot";
+        }
+        header {
+            text-align: center;
+            height: 150px;
+            grid-area: head;
+        }
+        header h1 {
+            color: #0b3545;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        header h3 , p {
+            color: #061c25;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        button#halloween {
+
+            border-radius: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            border: 2px solid #ffea68;
+            background-color: #fff6be;
+            color: #2d2912;
+            grid-area: button1;
+            width: 200px;
+            height: 70px;
+            margin: 0px auto;
+            font-size: 16px;
+        }
+
+        button#hideHal {
+            border-radius: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            border: 2px solid #ffea68;
+            background-color: #fff6be;
+            color: #2d2912;
+            width: 100px;
+            height: 40px;
+            margin: 0px auto;
+            font-size: 16px;
+        }
+
+        button#easter {
+            border: 2px solid #fe9df8;
+            background-color: #ffe9fe;
+            border-radius: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: #472b45;
+            grid-area: button2;
+            width: 200px;
+            height: 70px;
+            margin: 0px auto;
+            font-size: 16px;
+        }
+
+        button#hideEas {
+            border-radius: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            border: 2px solid #fe9df8;
+            background-color: #ffe9fe;
+            color: #472b45;
+            width: 100px;
+            height: 40px;
+            margin: 0px auto;
+            font-size: 16px;
+        }
+        
+
+        button#holiday {
+            border: 2px solid #fe803e;
+            background-color: #facab1;
+            border-radius: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: #482411;
+            grid-area: button3;
+            width: 200px;
+            height: 70px;
+            margin: 0px auto;
+            font-size: 16px;
+        }
+
+        button#hideHol {
+            border-radius: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            border: 2px solid #fe803e;
+            background-color: #facab1;
+            color: #482411;
+            width: 100px;
+            height: 40px;
+            margin: 0px auto;
+            font-size: 16px;
+        }
+
+        div#divHal {
+            line-height: 1.0em;
+            text-align: center;
+            grid-area: halloween;
+            padding-bottom: 10px;
+        }
+        div#divEas {
+            line-height: 1.0em;
+            text-align: center;
+            grid-area: easter;
+            padding-bottom: 10px;
+        }
+        div#divHol {
+            line-height: 1.0em;
+            text-align: center;
+            grid-area: holiday;
+            padding-bottom: 10px
+        }
+
+        footer {
+            grid-area: foot;
+            text-align: center;
+            border-top: 2px dashed #061c25;
+            color: #061c25;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Event information</h1>
+        <h3>Click the options below and see the informational flyer for each event.</h3>
+    </header>
+    <div id="divHal">
+    </div>
+    <button type="button" id="halloween">Retro Halloween Party</button>
+    <div id="divEas">
+    </div>
+    <button type="button" id="easter">Easter Egg Hunt</button>
+    <div id="divHol">
+    </div>
+    <button type="button" id="holiday">Holiday Festival</button>
+    <footer>
+        <p>&copy HunsleyEvents</p>
+    </footer>
+    <script>
+        let buttonHal = document.getElementById('halloween')
+        let buttonEas = document.getElementById('easter')
+        let buttonChr = document.getElementById('holiday')
+
+        buttonHal.addEventListener('click', displayHal);
+        buttonEas.addEventListener('click', displayEas);
+        buttonChr.addEventListener('click', displayHol);
+        
+        function displayHal(){
+            document.getElementById('divHal').innerHTML = `<img src="images/halloween_fest.png" alt="halloween flyer" id="imgHal" width="300">
+            <p>The Retro Halloween Party is an all ages event.<br> There will be plenty of fun activites and games.<br><br><b>Paint a Pumpkin!</b> You will get to pick your own pumpkin from our pumpkin patch to paint and take home.<br><br><b>Spooky Costume Contest!</b><br>Everyone is welcome to join and participate, top 3 winners recieve a prize!<br><br>Plus many rides and snacks to enjoy!<br><br><b>Remember!</b> Adults and Children with masks recieve free admission.</p>
+            <button type="button" id="hideHal">Hide Info</button>`
+            function hideInfo() {
+               document.getElementById('divHal').innerHTML = "";
+           }
+           document.getElementById('hideHal').addEventListener('click', hideInfo);
+        }
+
+        function displayEas(){
+            document.getElementById('divEas').innerHTML = `<img src="images/easter_fest.png" alt="easter flyer" id="imgEas" width="300">
+            <p>The Easter Egg Hunt is an all ages event. Families can participate as a team and the top 3 teams will recieve a prize!<br><br><b>Egg Dying and Painting!</b><br>Paint or Dye your own egg to take home and put on display.<br><br> <b>Bounce Land!</b><br> There will be a bounce house for kids ages 4-12 and a smaller bounce house for kids under 4.<br>*kids under 4 require parental supervision at all times when in the bounce house.*<br><br>There are many other booths and activites, maybe you'll even spot the Easter Bunny.</p>
+            <button type="button" id="hideEas">Hide Info</button>`
+            function hideInfo() {
+               document.getElementById('divEas').innerHTML = "";
+           }
+           document.getElementById('hideEas').addEventListener('click', hideInfo);
+        }
+
+        function displayHol(){
+           document.getElementById('divHol').innerHTML = `<img src="images/holiday_fest.png" alt="holiday flyer" id="imgHol" height="388.44">
+           <p>Our Holiday Party is an event for all to Enjoy! With our <b>Winter Light & Skating Show</b> and <b>Photo with Santa Booth</b> your guarenteed to have fun no matter your age!<br><br><b>Silent Auction</b><br>Bid on amazing gift baskets and one of a kind experiences to treat yourself or maybe gift to another this holiday season. All proceeds will be donated to Sick Kids Hospital.<br><br><b>Adult Dance Party</b><br>After 9pm the festival becomes adults only as we open up our free wine and beer bar, along with several holiday themed cocktails to enjoy!<br>So get out on that dance floor!</p>
+           <button type="button" id="hideHol">Hide Info</button>`
+           function hideInfo() {
+               document.getElementById('divHol').innerHTML = "";
+           }
+           document.getElementById('hideHol').addEventListener('click', hideInfo);
+        }
+
+
+    </script>
+</body>
+</html>

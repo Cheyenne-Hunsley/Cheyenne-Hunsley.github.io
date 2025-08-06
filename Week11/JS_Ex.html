@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Exercise</title>
+    <style>
+        html {
+            background-color: rgb(255, 255, 165);
+            font-family: sans-serif;
+            color: rgb(54, 38, 22);
+        }
+
+        body {
+            margin-left: 10px;
+            background-color: rgba(250, 246, 215, 0.722);
+            border: 2px solid rgb(54, 38, 22);
+            padding: 15px;
+            border-radius: 5px;
+            width: 600px;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        button {
+            background-color: rgb(54, 38, 22);
+            color: white;
+            width: 100px;
+            padding: 8px;
+            border: black;
+            border-radius: 3px;
+        }
+        button#validateb {
+            margin-right: 70px;
+            margin-left: 15px;
+        }
+        form span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Exercise</h1>
+    <h3>Form Validation</h3>
+    <form id="myForm" name="myForm">
+        <label for="fName">First Name:</label>
+        <input type="text" name="fName" id="fName">
+        <span id="fName_error">*</span><br><br>
+        <label for="lName">Last Name:</label>
+        <input type="text" name="lName" id="lName">
+        <span id="lName_error">*</span><br><br>
+        <label for="mark1">Mark 1:</label>
+        <input type="number" name="mark1" id="mark1">
+        <span id="mark1_error">*</span><br><br>
+        <label for="mark2">Mark 2:</label>
+        <input type="number" name="mark2" id="mark2">
+        <span id="mark2_error">*</span><br><br>
+        <label for="mark3">Mark 3:</label>
+        <input type="number" name="mark3" id="mark3">
+        <span id="mark3_error">*</span><br><br>
+        <button id="validateb">Validate</button>
+        <button id="resultb">Print Result</button>
+    </form>
+    <p id="results">Results</p>
+    <script>
+        
+        var $ = function(id) {
+            return document.getElementById(id);
+        }
+        
+        function validateForm() {
+            event.preventDefault()
+            let first = document.getElementById('fName').value;
+            let last = document.getElementById('lName').value;
+            let mk1 = document.getElementById('mark1').value;
+            let mk2 = document.getElementById('mark2').value;
+            let mk3 = document.getElementById('mark3').value;
+
+            if (first == ""){
+                $("fName_error").firstChild.nodeValue = "This Field is required.";
+            }
+            else{
+                $('fName_error').firstChild.nodeValue = "";
+    
+            }
+
+            if (last == ""){
+                $('lName_error').firstChild.nodeValue = "This Field is required.";
+            }
+            else {
+              $('lName_error').firstChild.nodeValue = "";
+            }
+
+            if(mk1 == "" || mk1 < 0 || mk1 > 100){
+                $('mark1_error').firstChild.nodeValue = "This Field is invalid.";
+            }
+            else {
+                $('mark1_error').firstChild.nodeValue = "";
+
+            }
+
+            if (mk2 == "" || mk2 < 0 || mk2 > 100){
+                $('mark2_error').firstChild.nodeValue = "This Field is invalid.";
+
+            }
+            else {
+                $('mark2_error').firstChild.nodeValue = "";
+
+            }
+
+            if (mk3 == "" || mk3 < 0 || mk3 > 100){
+                $('mark3_error').firstChild.nodeValue = "This Field is invalid.";
+
+            }
+            else {
+                $('mark3_error').firstChild.nodeValue = "";
+
+            }
+        }
+
+        let buttonVal = document.getElementById('validateb')
+        buttonVal.addEventListener('click', validateForm)
+
+
+        function printResult(){
+            event.preventDefault()
+            let first = document.getElementById('fName').value;
+            let last = document.getElementById('lName').value;
+            let mark1 = parseInt($('mark1').value)
+            let mark2 = parseInt($('mark2').value)
+            let mark3 = parseInt($('mark3').value)
+            let avg = (mark1+mark2+mark3)/3
+            console.log('avg')
+            let resultText = document.getElementById('results')
+
+            if (avg >= 90){
+                resultText.firstChild.nodeValue = `First Name: ${first}, Last Name: ${last}, Average = ${avg}, Awesome!`
+            }
+            else if (avg >= 80){
+                resultText.firstChild.nodeValue = `First Name: ${first}, Last Name: ${last}, Average = ${avg}, Very Good!`
+            }
+            else if (avg >= 50){
+                resultText.firstChild.nodeValue = `First Name: ${first}, Last Name: ${last}, Average = ${avg}, OK.`
+            }
+            else if (avg < 50){
+                resultText.firstChild.nodeValue = `First Name: ${first}, Last Name: ${last}, Average = ${avg}, Fail`
+            }
+            else {
+                resultText.firstChild.nodeValue = "Invalid Number"
+            }
+        }
+        let buttonPrint = document.getElementById('resultb')
+        buttonPrint.addEventListener('click', printResult)
+    </script>
+</body>
+</html>

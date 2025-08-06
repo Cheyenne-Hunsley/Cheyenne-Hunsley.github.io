@@ -1,12 +1,39 @@
 Code within the terminal and function 
 
-git add -A      Prepares files before comitting
-git commit -m "comment"         commits files to your local repository, keep "" and replace comment with update or changes
-git push 'repository link' 'repository branch'      pushes files to your remote repository 
-git merge 'branch name'         merge branch name contents with current branch contents 
-git clone "remote repo address" --branch 'branch name' folder name/   creates a clone of the remote repository branch into current folder and gives it folder name
-git branch -m 'new name'        renames a branch within the local repository
-git config --global init.defualtBranch 'branch name'        configures all branches to branch name
-git config --global --get init.defaultBranch      get the defualt name of branches
-git branch --list       lists all current branches in your local repository and highlights current working branch 
+git add -A (or git add .)   
+    Prepares files in current folder before comitting
 
+git commit -m "comment"
+    commits files to your local repository, keep "" and replace comment with update or changes
+
+git push 'repository link' 'repository branch'
+    pushes files to your remote repository 
+
+git merge 'branch name'
+    merge branch name contents with current branch contents 
+
+git clone "remote repo address" --branch 'branch name' folder name/   
+    creates a clone of the remote repository branch into current folder and gives it folder name
+
+git branch -m 'new name'
+    renames a branch within the local repository
+
+git config --global init.defualtBranch 'branch name'
+    configures all branches to branch name
+
+git config --global --get init.defaultBranch
+    get the defualt name of branches
+
+git branch --list
+    lists all current branches in your local repository and highlights current working branch 
+
+git config --list 
+    gives username and email address
+
+git config --global user.name "username" or user.email "email"
+    sets a user name or user email for every push
+
+git rm -rf
+    forcefull removes a file
+
+git 

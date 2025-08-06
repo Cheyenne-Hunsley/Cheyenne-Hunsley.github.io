@@ -32,7 +32,7 @@
             </ul>
         </nav>
         <main>
-            <form action="process.php" method="get">
+            <form action="process.php" method="get" name="FormName">
                 <fieldset>
                         <legend>Personal Info:</legend>
                     <label for="fName">First Name:</label>
@@ -85,6 +85,14 @@
                 <textarea name="comment" id="comment" rows="10" cols="30">Provide Your Comment Here</textarea><br><br><br>
                 <input type="submit" value="Submit">
                 <button type="button" onclick="alert('Hello There!')">Click Here!</button>
+            </form>
+            <!-- July 25 -->
+            <form action="process.php" method="post" name="myForm">
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName"><br><br>
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName"><br><br>
+                <button type="submit" value="Submit"></button>
             </form>
         </main>
         <footer>

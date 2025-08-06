@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Exercise</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        html{
+            min-width: 100%;
+            max-width: 100%;
+        }
+        body {
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 10px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            color: rgb(87, 0, 0);
+        }
+        div#buttons {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "hide"
+            "show"
+            "toggle";
+            gap: 5px;
+        }
+
+        button{
+            width: 150px;
+        }
+
+    </style>
+</head>
+<body id="body">
+    <h2>Country:</h2>
+    <p>CANADA</p>
+    <h2>Captial:</h2>
+    <p id="capital">OTTAWA</p>
+    <div id="buttons">
+        <button type="button" id="hide">Hide capital name</button>
+        <button type="button" id="show">Show capital name</button>
+        <button type="button" id="toggle">Toggle</button>
+    </div>
+    <h2 id="yellow">Hover over this paragraph for Yellow</h2>
+    <h2 id="bgImg">Click on this paragraph for Background image.</h2>
+    <script>
+        $('#hide').on('click', function(){
+            $('#capital').hide();
+        })
+        
+        $('#show').on('click', function() {
+            $('#capital').show();
+        })
+
+        $('#toggle').on('click', function(){
+            $('#capital').toggle();
+        });
+
+        $('#yellow').hover(function() {
+            $('#body').css("background-color", "lightyellow")
+        }, function(){
+            $('#body').css('background-color', 'white')
+        })
+    
+        $('#bgImg').on('click', function(){
+            $('#body').css('background-image', 'url(./bg_img.jpg)')
+        })
+
+    </script>
+</body>
+</html>

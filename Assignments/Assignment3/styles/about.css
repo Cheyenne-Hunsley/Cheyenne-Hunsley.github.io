@@ -1,0 +1,195 @@
+@font-face {
+    font-family: HeaderFont;
+    src: url(../fonts/mobilla.regular.ttf);
+}
+
+
+@font-face {
+    font-family: TextFont;
+    src: url(../fonts/glacial-indifference.regular.otf);
+}
+html {
+    background-image: url(../images/bg_img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    background-color: #b7b2dc00;
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "head"
+    "main"
+    "foot";
+}
+
+header {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    grid-area: head;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo navbar";
+    background-color: #b7b2dc3e;
+    height: 35px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+section#head {
+    grid-area: logo;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+img#logo {
+    height: 30px;
+}
+
+header h3 {
+    flex-wrap: nowrap;
+    font-family: TextFont;
+    color: #c4c4d4;
+    font-size: 1.5em;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+
+nav ul a {
+    flex-wrap: nowrap;
+    width: 80px;
+    text-decoration: none;
+    color: #362c51;
+    font-family: TextFont;
+}
+
+nav ul a#active{
+    color: #c4c4d4;
+}
+
+main {
+    grid-area: main;
+    background-color: #b7b2dc84;
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: 5px 5px 5px #706980;
+}
+
+section#intro h1 {
+    font-size: 40px;
+    font-family: HeaderFont;
+    color: #464550;
+} 
+
+section#intro h2 {
+    font-size: 25px;
+    font-family: HeaderFont;
+    color: #4e4660;
+}
+
+section#intro p {
+    font-family: TextFont;
+    color: #2f2f32;
+}
+
+section#intro a {
+    color: #6432d6;
+}
+
+section#intro a:hover {
+    color: #17043d;
+}
+
+section#accordion button{
+    background-color: #b7b2dc;
+    border: 2px solid #464550;
+    color: #2f2f32;
+}
+
+div#experience{
+    font-family: TextFont;
+    color: #2f2f32;
+    background-color: #c4c4d4;
+}
+
+div#experience h2 {
+    font-family: HeaderFont;
+}
+
+div#skills {
+    font-family: TextFont;
+    color: #2f2f32;
+    background-color: #c4c4d4;
+}
+
+div#skills h2 {
+    font-family: HeaderFont;
+}
+
+footer {
+    margin-top: 2%;
+    grid-area: foot;
+    background-color: #b7b2dc7d;
+    height: 60px;
+    border-radius: 20px;
+    color: #362c51;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "copyright copyright copyright"
+    "email message insta";
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+    line-height: 0.8em;
+    box-shadow: 5px 5px 5px #706980;
+}
+
+footer a{
+    text-decoration: none;
+    color: #6432d6;
+}
+
+p#copy {
+    position: relative;
+    right: 15px;
+    grid-area: copyright;
+}
+
+p#email {
+    grid-area: email;
+}
+
+p#message{
+    grid-area: message;
+}
+
+p#insta{
+    grid-area: insta;
+}

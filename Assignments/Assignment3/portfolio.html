@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/portfolio.css" type="text/css">
+    <link rel="icon" href="images/Favicon2/favicon.ico" type="image/x-icon">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <section id="head">
+            <img src="images/Logo_Img/Favicon_Logo2.png" alt="website logo" id="logo">
+            <h3>Cheyenne Hunsley</h3>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html" id="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <section id="main" class="container-fluid">
+            <h1>Portfolio</h1>
+            <p>Here is a protfolio of my past and current ongoing Projects.</p>
+        </section>
+        <section id="projects" class="container-fluid">
+            <div class="card" id="project1">
+                <img src="images/Bookaneers_Unedited.png" class="card-img-top" alt="bookaneer logo">
+                <div class="card-body">
+                    <h5 class="card-title">Bookaneer</h5>
+                    <h6 class="card-subtitle mb-2">A book review website</h6>
+                    <p class="card-text">For this project, my partner and I, made a website for readers who wish to share their own books in like a personal library style.
+                    <br>The website allows readers to add certain books using an ISBN database to their "Libraries" and leave comments and rate the Book itself along with recommended other books.
+                    </p>
+                    <button><a href="#">Link</a></button>
+                </div>
+            </div>
+            <div class="card" id="project2">
+                <img src="images/MisteryFalls_Logo.png" class="card-img-top" alt="bookaneer logo">
+                <div class="card-body">
+                    <h5 class="card-title">Mystery Falls</h5>
+                    <h6 class="card-subtitle mb-2">A text-based mystery game.</h6>
+                    <p class="card-text">The choose your own adventure style of this game allows the player to enter a name and stats and investigate a Manor to solve a Murder. 
+                        <br>Future plans include additional stat increases and implimenting mulitple story endings and different victim outcomes. 
+                    </p>
+                    <button><a href="#">Link</a></button>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="container-fluid">
+            <h2>Photography Gallery</h2>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="carousel">
+                        <img src="images/Tree_photo.jpg" class="img-fluid" alt="Tree Photo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>This is an image of a tree from a higschool Garden Photoshoot</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="carousel">
+                        <img src="images/Flower_Photo.jpg" class="img-fluid" alt="Orange Flower">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Continuation of the Garden Photoshoot - Orange Flower</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="carousel">
+                        <img src="images/Flower_Photo2.gif" class="img-fluid" alt="White Flower">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Continuation of the Garden Photoshoot - White Flower</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    <footer class="container-fluid">
+        <p id="copy">&copy 2025 Cheyenne Hunsley</p>
+        <p id="message">Built with love & lack of sleep</p>
+        <p id="email"><a href="mailto:cheyenne.hunsley@gmail.com">Email</a></p>
+        <p id="insta"><a href="https://instagram.com/cheyenne.hunsley" target="blank">Instagram</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
