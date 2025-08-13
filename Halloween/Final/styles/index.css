@@ -45,14 +45,14 @@ header img {
     height: 140px;
 }
 
-header div {
+header div#text{
     padding: 25px;
-    margin-left: 140px;
+    margin-left: 100px;
 }
 
 header h1 {
     text-align: left;
-    font-size: 50px;
+    font-size: 35px;
     color: black;
     font-weight: 700;
     /* font-style: italic; */
@@ -61,30 +61,66 @@ header h1 {
 
 }
 header h3 {
-text-indent:10px;
-    font-size: 30px;
-        margin-block-start: 0em;
+    text-indent:10px;
+    font-size: 20px;
+    margin-block-start: 0em;
     margin-block-end: 0em;
 }
 
+header nav {
+    grid-area: navbar;
+}
+
 header nav ul {
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
+    height: 30px;
+    display: grid;
+    grid-template: 30px / 15% 20% 15% 25% 15%;
+    gap: 15px;
+    /* justify-content: space-around; */
     background-color: black;
-    /* padding-right: 50px;
-    padding-left: 50px; */
 }
 
 header nav ul li a{
+    text-align: center;
     display: block;
-    padding: 13px 10px;
+    padding: 6px;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-header nav ul li a.active{
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    min-width: 160px;
+    background-color: black;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 13px 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover, .dropdown:hover {
+    background-color: grey;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+header nav ul li a#active{
     color: orange;
 }
 

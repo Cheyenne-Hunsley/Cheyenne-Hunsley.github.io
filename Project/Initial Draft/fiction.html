@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="./styles/page.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/Project6/images/favicon.ico" type="image/x-icon">
+    <title>Homepage</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo_NW.png" alt="logo"  id="logo">
+        <h1>Bookaneers</h1>
+        <p>Search Bar</p>
+        <div>
+            <button type="button"><a href="login.html">Login/Sign Up</a></button>
+            <img src="images/profileicon.png"  alt="profile picture" id="profileicon">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li class="dropdown">Fiction
+                    <div class="dropdown-content">
+                        <a href="fantasy.html">Fantasy</a>
+                        <a href="fiction.html" class="active">Gen. Fiction</a>
+                        <a href="mystery.html">Mystery</a>
+                    </div>
+                </li>
+                <li class="dropdown">Non-Fiction
+                    <div class="dropdown-content">
+                        <a href="business.html">Business</a>
+                        <a href="cooking.html">Cooking</a>
+                        <a href="wellness.html">Welness</a>
+                    </div>
+                </li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="new" class="container-fluid">
+            <h1>New Releases</h1>
+            <a href="ficbook.html"><img src="images/Fiction/newbook1.jpg" id="newbook1" alt="Tomorrow and Tomorrow and Tomorrow"></a>
+            <p id="text1"><a href="ficbook.html">Tomorrow, and Tomorrow,<br> and Tomorrow</a></p>
+            <img src="images/Fiction/newbook2.avif" id="newbook2" alt="My Other Heart">
+            <p id="text2">My Other Heart</p>
+            <img src="images/Fiction/newbook3.avif" id="newbook3" alt="I know how this ends">
+            <p id="text3">I Know How This Ends.</p>
+            <img src="images/Fiction/newbook4.avif" id="newbook4" alt="Saving Face">
+            <p id="text4">Saving Face</p>
+        </section>
+
+        <section id="trending" class="container-fluid">
+            <h1>Trending Now</h1>
+            <img src="images/Fiction/trendbook1.avif" id="trendbook1" alt="These Memories Do Not Belong To Us">
+            <p id="text1">These Memories Do Not Belong To Us</p>
+            <img src="images/Fiction/trendbook2.avif" id="trendbook2" alt="Broken Country">
+            <p id="text2">Broken Country</p>
+            <img src="images/Fiction/trendbook3.avif" id="trendbook3"  alt="Dream Count">
+            <p id="text3">Dream Count</p>
+            <img src="images/Fiction/trendbook4.avif" id="trendbook4" alt="My Friends">
+            <p id="text4">My Friends</p>
+        </section>
+
+        <section id="aotm" class="container-fluid">
+            <h1>Author<br>of the Month</h1>
+            <img src="images/Fiction/ficauthor.webp" alt="Carley Fortune" id="aotmImg">
+            <h3>Carley Fortune</h3>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/Fiction/carbook1.jpg" alt="Every Summer After" id="car-book1">
+                
+                </div>
+
+                <div class="carousel-item">
+                <img src="images/Fiction/carbook2.webp" alt="One Golden Summer" id="car-book2">
+                
+                
+                </div>
+                <div class="carousel-item">
+                <img src="images/Fiction/carbook3.webp" alt="Summer at the Lake" id="car-book3">
+                
+                </div>
+                <div class="carousel-item">
+                <img src="images/Fiction/carbook4.webp" alt="" id="car-book4">
+                
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Contact Us</p>
+        <p>contact@bookaneers.ca</p>
+        <p></p>
+        <p>205 Humber College Boulevard, Toronto, ON, M9W 5L7</p>
+        <p>416-555-BOOK</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+</html> 

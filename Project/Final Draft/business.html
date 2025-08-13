@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/page.css" type="text/css">
+    <link rel="icon" href="/Project6/images/favicon.ico" type="image/x-icon">
+    <title>Homepage</title>
+</head>
+<body>
+   <header>
+    <div class="header-left">
+        <img src="images/logo_NW.png" alt="logo" id="logo">
+        <h1>Bookaneers</h1>
+    </div>
+
+    <input type="text" id="searchbar" placeholder="Search books...">
+
+    <div class="header-right">
+        <button type="button"><a href="login.html">Login/Sign Up</a></button>
+        <img src="images/profileicon.png" alt="profile picture" id="profileicon">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Homepage</a></li>
+            <li class="dropdown">Fiction
+                <div class="dropdown-content">
+                    <a href="fantasy.html">Fantasy</a>
+                    <a href="fiction.html">Gen. Fiction</a>
+                    <a href="mystery.html">Mystery</a>
+                </div>
+            </li>
+            <li class="dropdown">Non-Fiction
+                <div class="dropdown-content">
+                    <a href="business.html">Business</a>
+                    <a href="cooking.html">Cooking</a>
+                    <a href="wellness.html">Wellness</a>
+                </div>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <section id="new" class="container-fluid">
+            <h1>New Releases</h1>
+            <img src="images/Business/newbook1.avif" id="newbook1" alt="The Emotional Intelligence Advantage">
+            <p id="text1">The Emotional<br>Intelligence Advantage</p>
+            <img src="images/Business/newbook2.avif" id="newbook2" alt="Brdiging the Confidence Gap">
+            <p id="text2">Bridging the<br>Confidence Gap</p>
+            <img src="images/Business/newbook3.avif" id="newbook3" alt="The 7 Commitments of a Great Team">
+            <p id="text3">The 7 Commitments<br>of a Great Team</p>
+            <img src="images/Business/newbook4.avif" id="newbook4" alt="Building Unstopable Teams">
+            <p id="text4">Building Unstopable<br>Teams</p>
+        </section>
+
+        <section id="trending" class="container-fluid">
+            <h1>Trending Now</h1>
+            <img src="images/Business/trendbook1.avif" id="trendbook1" alt="Values(s)">
+            <p id="text1">Value(s)</p>
+            <img src="images/Business/trendbook2.avif" id="trendbook2" alt="Hidden Potential">
+            <p id="text2">Hidden Potential</p>
+            <img src="images/Business/trendbook3.avif" id="trendbook3"  alt="Onward">
+            <p id="text3">Onward</p>
+            <img src="images/Business/trendbook4.avif" id="trendbook4" alt="Empire of Pain">
+            <p id="text4">Empire of Pain</p>
+        </section>
+
+        <section id="aotm" class="container-fluid">
+            <h1>Author<br>of the Month</h1>
+            <img src="images/Business/authorImg.jpg" alt="Robert Greene" id="aotmImg">
+            <h3>Robert Greene</h3>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/Business/carbook1.avif" alt="48 Laws of Power" id="car-book1">
+                </div>
+
+                <div class="carousel-item">
+                <img src="images/Business/carbook2.avif" alt="The Art of Seduction" id="car-book2">
+                
+                </div>
+                <div class="carousel-item">
+                <img src="images/Business/carbook3.avif" alt="The Laws of Human Nature" id="car-book3">
+                
+                </div>
+                <div class="carousel-item">
+                <img src="images/Business/carbook4.avif" alt="The 33 Strategies of War" id="car-book4">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact Us</p>
+        <p>contact@bookaneers.ca</p>
+        <p></p>
+        <p>205 Humber College Boulevard, Toronto, ON, M9W 5L7</p>
+        <p>416-555-BOOK</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+</html> 

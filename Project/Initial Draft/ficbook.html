@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/book.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../Project6/images/favicon.ico" type="image/x-icon">
+    <title>Login/Sign Up</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo_NW.png" alt="logo"  id="logo">
+        <h1>Bookaneers</h1>
+        <p>Search Bar</p>
+        <div>
+            <button type="button"><a href="login.html">Login/Sign Up</a></button>
+            <img src="images/profileicon.png"  alt="profile picture" id="profileicon">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Homepage</a></li>
+                <li class="dropdown">Fiction
+                    <div class="dropdown-content">
+                        <a href="fantasy.html">Fantasy</a>
+                        <a href="fiction.html">Gen. Fiction</a>
+                        <a href="mystery.html">Mystery</a>
+                    </div>
+                </li>
+                <li class="dropdown">Non-Fiction
+                    <div class="dropdown-content">
+                        <a href="business.html">Business</a>
+                        <a href="cooking.html">Cooking</a>
+                        <a href="wellness.html">Welness</a>
+                    </div>
+                </li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <div class="page-container"> 
+            <!-- Left column -->
+            <div class="left-column">
+                <div class="sticky">
+                    <img src="images/Fiction/FicBook/book1.jpg" alt="" class="responsiveImage">
+                    <button class="book-button">Want to Read</button>
+                    <button class="book-button">Kindle $13.99</button>
+                    <!-- Star ratings -->
+                    <div class="star-rating">
+                        <input type="radio" name="rating" id="star5"><label for="star5">★</label>
+                        <input type="radio" name="rating" id="star4"><label for="star4">★</label>
+                        <input type="radio" name="rating" id="star3"><label for="star3">★</label>
+                        <input type="radio" name="rating" id="star2"><label for="star2">★</label>
+                        <input type="radio" name="rating" id="star1"><label for="star1">★</label>
+                    </div>     
+                    <a href="#" class="rate-book">Rate this book</a>   
+                </div>
+            </div>
+            <!-- Right column -->
+            <div class="right-column">
+                <div class="bookTitle">
+                    <div>
+                        <h2 class="book-heading">Tomorrow, and Tomorrow, and Tomorrow</h2>
+                        <button class="share-button" title="Share">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="18" cy="5" r="3"></circle>
+                                <circle cx="6" cy="12" r="3"></circle>
+                                <circle cx="18" cy="19" r="3"></circle>
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                            </svg>
+                        </button>       
+                    </div>
+                    <div class="author-name1">
+                        <span>Gabrielle Zevin</span>
+                    </div>
+                    <div class="fixed-rating">
+                        <div class="stars"></div>
+                        <span class="score">4.13</span>
+                        <span class="meta"> 12,645 ratings · 1358 reviews</span>
+                    </div>
+                    <div class="text-container">
+                        <div id="myText" class="preview">
+                            <p>
+                                <b>In this exhilarating novel, two friends—often in love, but never lovers—come together as creative partners in the world of video game design, where success brings them fame, joy, tragedy, duplicity, and, ultimately, a kind of immortality.</b>
+                            </p>
+                            <p>
+                                On a bitter-cold day, in the December of his junior year at Harvard, Sam Masur exits a subway car and sees, amid the hordes of people waiting on the platform, Sadie Green. He calls her name. For a moment, she pretends she hasn't heard him, but then, she turns, and a game begins: a legendary collaboration that will launch them to stardom. These friends, intimates since childhood, borrow money, beg favors, and, before even graduating college, they have created their first blockbuster, Ichigo. Overnight, the world is theirs. Not even twenty-five years old, Sam and Sadie are brilliant, successful, and rich, but these qualities won't protect them from their own creative ambitions or the betrayals of their hearts.
+    
+                                Spanning thirty years, from Cambridge, Massachusetts, to Venice Beach, California, and lands in between and far beyond, Gabrielle Zevin's Tomorrow, and Tomorrow, and Tomorrow is a dazzling and intricately imagined novel that examines the multifarious nature of identity, disability, failure, the redemptive possibilities in play, and above all, our need to connect: to be loved and to love. Yes, it is a love story, but it is not one you have read before.
+                            </p>
+                    </div>
+                        <button id="toggleBtn">Read more</button>
+                    </div>
+                    <div class="genres">
+                        <span>Genres:</span>
+                        <a href="" class="genre">Fiction</a>
+                        <a href="" class="genre">BookClub</a>
+                        <a href="" class="genre">Contemporary</a>
+                        <a href="" class="genre">Romance</a>
+                        <a href="" class="genre">AudioBook</a>
+                        <a href="" class="genre">Literary Fiction</a>
+                        <a href="" class="genre">Historical Fiction</a>
+                        <a href="" class="genre">...more</a>
+                    </div>
+                    <div><p>401 pages, Hardcover</p></div>
+                    <div><p>First published July 5, 2022</p></div>
+                    <div>
+                        <div id="description" style="display: none;">
+                            <div class="description">
+                                <div class="description-content">
+                                    <span>Literary awards</span>
+                                    <div>
+                                        <a href="">British Book Award Nominee for Pageturner (2024)</a>
+                                        <a href="">ALA Alex Award Nominee (2023)</a>
+                                        <a href="">Goodreads Choice Award for Fiction (2022)</a>
+                                        <a href="">Book of the Month Book of the Year Award (2022)</a>
+                                        <a href="">The Rooster -- The Morning News Tournament of Books Nominee for Shortlist (2023)</a>
+                                        <a href="">Barnes & Noble Book of the Year Award Nominee (2022)</a>
+                                        <a href="">RUSA CODES Reading List Nominee for Relationships (2023)</a>
+                                    </div>
+                                </div>
+                                <div class="description-content">
+                                    <span>Original Title</span><div><a href="">Tomorrow, and Tomorrow, and Tomorrow</a></div>
+                                </div>     
+                                <div class="description-content">
+                                    <span>Setting</span>
+                                    <div>
+                                        <a href="">Harvard University, Cambridge, Massachusetts (United States)</a>
+                                        <a href="">Cambridge, Massachusetts (United States)</a>
+                                        <a href="">Massachusetts (United States)</a>
+                                        <a href="">Los Angeles, California (United States)</a>
+                                        <a href="">Venice Beach, California (United States)</a>
+                                        <a href="">oreatown, Los Angeles, California (United States)</a>
+                                        <a href="">California (United States)</a>
+                                        <a href="">Massachusetts Institute of Technology (MIT) (United States)</a>
+                                    </div>
+                                </div>   
+                                <div class="description-content">
+                                    <span>Characters</span>
+                                    <div>
+                                        <a href="">	Sam Masur</a>
+                                        <a href="">Sadie Green</a>
+                                        <a href="">Marx Watanabe</a>
+                                        <a href="">Dov Mizrah</a>
+                                        <a href="">Antony Ruiz</a>
+                                        <a href="">Simon Freeman</a>
+                                        <a href="">Zoe Cadogan</a>
+                                    </div>
+                                </div>   
+                                <h4>This edition</h4>  
+                                <div class="description-content">
+                                    <span>Format</span><div><a href="">	401 pages, Hardcover</a></div>
+                                </div>    
+                                <div class="description-content">
+                                    <span>Published</span><div><a href="">	July 5, 2022 by Knopf</a></div>
+                                </div>    
+                                <div class="description-content">
+                                    <span>ISBN</span><div><a href="">9780735243347 (ISBN10: 0735243344)</a></div>
+                                </div>    
+                                <div class="description-content">
+                                    <span>ASIN</span><div><a href="">0735243344</a></div>
+                                </div>    
+                                <div class="description-content">
+                                    <span>Language</span><div><a href="">English</a></div>
+                                </div>    
+                            </div>
+                        </div>
+                            <button id="toggle-btn">Book details & editions</button>
+                    </div>
+                    <hr class="section-divider">
+                <div>
+                    <div class="customers">
+                        <div class="customer-images">
+                            <img src="images/Fiction/FicBook/customer1.jpg" alt="" class="customer">
+                            <img src="images/Fiction/FicBook/customer2.jpg" alt="" class="customer">
+                            <img src="images/Fiction/FicBook/customer3.jpg" alt="" class="customer ">
+                        </div>
+                        <div class="customer-text">6453 people are currently reading</div>
+                         <div class="customer-images">
+                            <img src="images/Fiction/FicBook/customer4.jpg" alt="" class="customer">
+                            <img src="images/Fiction/FicBook/customer5.jpg" alt="" class="customer">
+                            <img src="images/Fiction/FicBook/customer6.jpg" alt="" class="customer">
+                        </div>
+                        <div class="customer-text">24523 people want to read</div>
+                    </div>
+                    <hr class="section-divider">
+                </div>
+                <div>
+                    <h3>About the author</h3>
+                    <div class="author-info">
+                        <img src="images/Fiction/FicBook/Author.jpg" alt="" class="author">
+                        <div class="author-details">
+                            <div class="left-side-info">
+                                <span>Gabrielle Zevin</span>
+                                <span class="meta"> 21 books · 18.4k followers</span>
+                            </div>
+                            <div class="right-side-info">
+                                <button>Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p>GABRIELLE ZEVIN is a New York Times best-selling novelist whose books have been translated into forty languages.</p>
+                    <!-- Expandable section: More about the author -->
+                    <div id="author-more" style="display: none; margin-top: 10px;">
+                        <div class="description">
+                            <div class="description-content" style="display: block; margin-right: 30px;">
+                                <p>Her tenth novel, Tomorrow, and Tomorrow, and Tomorrow was published by Knopf in July of 2022 and was an instant New York Times Best Seller, a Sunday Times Best Seller, a USA Today Best Seller, a #1 National Indie Best Seller, and a selection of the Tonight Show’s Fallon Book Club. Maureen Corrigan of NPR’s Fresh Air called it, “a big beautifully written novel…that succeeds in being both serious art and immersive entertainment.” Following a twenty-five-bidder auction, the feature film rights to Tomorrow, and Tomorrow, and Tomorrow were acquired by Temple Hill and Paramount Studios.</p>
+                                <p>The Storied Life of A.J. Fikry spent many months on the New York Times Best Seller List, reached #1 on the National Indie Best Seller List, was a USA Today Best Seller, and has been a best seller all around the world. A.J. Fikry was honored with the Southern California Independent Booksellers Award for Fiction, the Japan Booksellers’ Prize, and was long listed for the International Dublin Literary Award, among other honors. To date, the book has sold over five-million copies worldwide. It is now a feature film with a screenplay by Zevin. Young Jane Young won the Southern Book Prize and was one of the Washington Post’s Fifty Notable Works of Fiction.</p>
+                                <p>She is the screenwriter of Conversations with Other Women (Helena Bonham Carter) for which she received an Independent Spirit Award Nomination for Best First Screenplay. She has occasionally written criticism for the New York Times Book Review and NPR’s All Things Considered, and she began her writing career, at age fourteen, as a music critic for the Fort Lauderdale Sun-Sentinel. Zevin is a graduate of Harvard University. She lives in Los Angeles.</p>
+                                <p>NOTE: Apologies, but Gabrielle doesn't reply to messages on Goodreads.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="author-more-btn">Show more</button>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p>Contact Us</p>
+        <p>customerservice@bookaneers.com</p>
+        <p>205 Humber College Boulevard, Toronto, ON, M9W 5L7</p>
+        <p>416-555-BOOK</p>
+    </footer>
+<script>
+  // Toggle preview text (Read more/less)
+  const btn = document.getElementById('toggleBtn');
+  const txt = document.getElementById('myText');
+  if (btn && txt) {
+    btn.addEventListener('click', () => {
+      const isExpanded = txt.classList.toggle('expanded');
+      btn.textContent = isExpanded ? 'Read less' : 'Read more';
+    });
+  }
+
+  // Toggle book details & editions
+  const bookDetailsBtn = document.getElementById("toggle-btn");
+  const bookDetailsDiv = document.getElementById("description");
+  if (bookDetailsBtn && bookDetailsDiv) {
+    bookDetailsBtn.onclick = () => {
+      bookDetailsDiv.style.display = "block";
+      bookDetailsBtn.style.display = "none";
+    };
+  }
+
+  // Toggle author more section
+  const authorMoreBtn = document.getElementById('author-more-btn');
+  const authorMoreDiv = document.getElementById('author-more');
+  if (authorMoreBtn && authorMoreDiv) {
+    authorMoreBtn.addEventListener('click', () => {
+      if (authorMoreDiv.style.display === 'none') {
+        authorMoreDiv.style.display = 'block';
+        authorMoreBtn.textContent = 'Hide more';
+      } else {
+        authorMoreDiv.style.display = 'none';
+        authorMoreBtn.textContent = 'Show more';
+      }
+    });
+  }
+</script>
+</body>
+</html>

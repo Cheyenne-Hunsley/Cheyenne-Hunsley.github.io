@@ -35,7 +35,7 @@ header img {
     height: 80px;
 }
 
-header div {
+header div#text{
     padding: 25px;
     margin-left: 100px;
 }
@@ -79,7 +79,38 @@ header nav ul li a{
     font-size: 15px;
 }
 
-header nav ul li a.active{
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    min-width: 160px;
+    background-color: black;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 13px 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover, .dropdown:hover {
+    background-color: grey;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+header nav ul li a#active{
     color: orange;
 }
 

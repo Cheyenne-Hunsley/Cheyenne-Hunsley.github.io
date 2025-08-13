@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../styles/normalize.css" type="text/css">
+	<link rel="stylesheet" href="../styles/decorations.css" type="text/css">
+	<title>Decorations</title>
+	<style>
+		p {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="../images/pumpkin.gif"	alt="pumpkin gif">
+		<div id="text">
+		<h1>The Halloween Store</h1>
+		<h3>For the little Goblin in all of us!</h3>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="../html/index.html">Home</a></li>
+				<li><a href="../html/product.html">Product List</a></li>
+				<li><a href="../html/personal.html">Personal</a></li>
+				<li class="dropdown"><a href="decorating.html"	id="active">Decorating Ideas</a>
+                    <div class="dropdown-content">
+                        <a href="outdoor.html">Outdoor</a>
+                        <a href="indoor.html">Indoor</a>
+                        <a href="table.html">Table</a>
+						<a href="treats.html">Treats</a>
+                    </div>
+                </li>
+				<li><a href="../html/email.html">Join Email</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="aside">
+		<ul type="none">
+			<li><a href="../html/outdoor.html">Outdoor</a></li>
+			<li><a href="../html/indoor.html">Indoor</a></li>
+			<li><a href="../html/table.html">Table</a></li>
+			<li><a href="../html/treats.html">Treats</a></li>
+		</ul>
+	</section>
+	<main>
+		<h2>Some of my favourite decorating ideas</h2>
+		<h3>Spooky Pumpkins</h3>
+		<!-- jQuery slide show -->
+		 <div id="slides">
+			 <img src="../images/decorations/carved_pumpkin.jpg" alt="carved pumpkin">
+			 <img src="../images/decorations/fireplace.jpg" alt="fireplace">
+			 <img src="../images/decorations/front_door.jpg" alt="frontdoor">
+			 <img src="../images//decorations/raven_mantel.jpg" alt="raven mantel">
+			 <img src="../images/decorations/table_setting.jpg" alt="table setting">
+		</div>
+	</main>
+	<footer>
+
+	</footer>
+	<script>
+		// days to halloween script
+		var day_description = "Halloween";
+		var day_before = "Halloween Eve";
+
+		var today = new Date();
+		var year = today.getYear();
+		if ((navigator.appName == "Microsoft Internet Explorer") && (year < 2000))
+		year="19" + year;
+		if (navigator.appName == "Netscape")
+		year=1900 + year;
+		var date = new Date("October 31, " + year);
+		var diff = date.getTime() - today.getTime();
+		var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+		
+		let footer = document.querySelector('footer')
+
+		let message = "";
+
+		if (days > 1)
+		message = "There are " + (days+1) + " days until " + day_description + "!";
+		else if (days == 1)
+		message = "Tommorrow is " + day_before  + "!";
+		else if (days == 0)
+		message = "Today is " + day_before + "!";
+		else if (days == -1)
+		message = "It's " + day_description + "!";
+		else if (days < -1)
+		message = day_description + " was " + ((days+1)*-1) + (days < -2 ? " days" : " day") + " ago!";
+		
+		footer.innerHTML = `<p>${message}</p>`;
+
+		//slideshow script
+		$(document).ready(function() {
+		var nextSlide = $("#slides img:first-child");
+		var nextCaption;
+		var nextSlideSource;
+		
+		// the function for running the slide show	
+		var runSlideShow = function() {   
+			$("#caption").fadeOut(3000);
+			$("#slide").fadeOut(3000,
+				function () {
+					if (nextSlide.next().length == 0) {
+						nextSlide = $("#slides img:first-child");
+					}
+					else {
+						nextSlide = nextSlide.next();
+					}
+					nextSlideSource = nextSlide.attr("src");
+					nextCaption = nextSlide.attr("alt"); 
+					$("#slide").attr("src", nextSlideSource).fadeIn(3000);					
+					$("#caption").text(nextCaption).fadeIn(3000);
+				}
+			)
+		}
+		
+		// start slide show
+		var timer1 = setInterval(runSlideShow, 3000);
+		
+		// start and stop the slide show
+		// but the toggle event method has been removed from jQuery 1.9
+		/*
+		$("#slide").toggle( 
+			function() {
+				clearInterval(timer1);
+			},
+			function() {
+				timer1 = setInterval(runSlideShow, 3000);
+			}
+		)
+		*/
+		
+		// here's one way to code this app without using the toggle event method
+		$("#slide").click(function() {
+			if (timer1 != null) {
+				clearInterval(timer1);
+				timer1 = null;
+			}
+			else {
+				timer1 = setInterval(runSlideShow, 1000);
+			}
+		});
+		
+	})
+	</script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+@font-face {
+    font-family: Transcity;
+    src: url(/Project/Fonts/transcity.regular.otf);
+}
+@font-face {
+    font-family: Kugile;
+    src: url(/Project/Fonts/kugile.regular.ttf);
+}
+@font-face {
+    font-family: Oliver Regular;
+    src: url(/Project/Fonts/oliver.a.ttf);
+}
+@font-face {
+    font-family: Oliver Italic;
+    src: url(/Project/Fonts/oliver.oblique.ttf);
+}
+
+html {
+    background-image: linear-gradient(#C2C5AA, #A4AC86, #656D4A, #414833);
+    font-family: Oliver Regular;
+}
+
+body {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #c2c5aa35;
+    border: 2px solid #333D29;
+}
+
+/* Header/Nav Changes */
+
+header {
+    border-bottom: 2px solid #333D29;
+
+}
+
+header h1{
+    color: #1E140B;
+    font-family: Transcity;
+    font-size: 100px;
+    
+}
+
+#logo {
+    position: relative;
+    top: -40px;
+    float: left;
+    width: 200px;
+}
+
+#profileicon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -230px;
+    left: 810px;
+}
+
+header button {
+    border: 1px solid #1E140B;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px #1E140B;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    background: #A68A64;
+    color: #1E140B ;
+    position: relative;
+    top: -250px;
+    left: 800px;
+}
+
+nav {
+    width: 80%;
+    margin: 10px auto;
+    margin-top: -100px;
+}
+
+nav ul {
+    border-radius: 10px;
+    height: 40px;
+    border: 2px solid #1E140B;
+    /* Green Nav Colour */
+    background-color: #293121;
+    /* Brown Nav Colour */
+    /* background-color: #3b2916; */
+    display: flex;
+    justify-content: space-around;
+    /* gap: 300px; */
+    font-family: Kugile;
+}
+
+nav ul li {
+    margin-top: 8px;
+    list-style: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav ul li a {
+    margin-top: -5px;
+
+}
+
+.dropdown {
+    margin-top: 3px;
+}
+
+nav ul li a, .dropdown {
+    /* Green Nav Text */
+    color: #C2C5AA;
+    /* Brown Nav Text */
+    /* color: #B6AD90; */
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 3px 3px 2px #1E140B;
+    background-color: #C2C5AA;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 13px 15px;
+    color: #1E140B;
+    text-decoration: none;
+    text-align: left;
+}
+
+nav ul li a:hover, .dropdown:hover {
+    background-color: #A4AC86;
+}
+
+.dropdown:hover .dropdown-content {
+    border: 1px solid #1E140B;
+    display:block;
+}
+
+/* Main content changes */
+.page-container {
+    display: flex;
+}
+.left-column {
+    width: 400px;
+}
+
+.sticky {
+    position: sticky;
+    top: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+.responsiveImage {
+    width:50%;
+    border-radius: 0px 20px 20px 0px;
+}
+
+button {
+    background-color: #293121;
+    color: white;
+}
+
+#toggleBtn {
+    margin-top: 2px;
+}
+
+.book-button{
+    margin: 10px auto;
+    padding: 10px 100px;
+    border-radius: 50px;
+    background-color: #293121;
+    color: white;
+}
+.star-rating {
+    direction: rtl;
+    display: inline-flex;
+    font-size: 2rem;
+  }
+
+  .star-rating input {
+    display: none;
+  }
+
+  .star-rating label {
+    color: lightgray;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .star-rating input:checked ~ label,
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: gold;
+  }
+  
+  .rate-book {
+    display: block;
+    margin: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #1e1915;
+  }
+
+  .right-column {
+    flex:1;
+  }
+
+  .book-title {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .author-name1 {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-bottom: 5px;
+}
+.book-heading {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.share-button {
+  margin-left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  align-items: center;
+  color: #555;
+}
+
+/* CSS */
+.text-container {
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+}
+
+.preview {
+  max-height: 3em;           /* height of ~2 lines */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.preview.expanded {
+  max-height: none;          /* let it grow */
+}
+
+.section-divider {
+    border: none;
+    width: 95%;
+    border-top: 1px solid #1e1915;  
+    margin: 2em 0;            
+}
+
+.customer {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 1px solid #1e1915;
+    margin-right: -8%;
+}
+
+
+
+.customers {
+    display: flex;
+    gap: 20px;
+}
+
+
+.customer-images {
+    display: flex;
+}
+
+.customer-text {
+    padding: 15px 0px;
+    margin-left: -30px;
+}
+
+#author-more-btn {
+    margin: 10px;
+}
+/* Footer Changes */
+footer {
+    /* Green Footer */
+    background-color: #293121;
+    color: #C2C5AA;
+    /* Brown Footer */
+    /* background-color: #3b2916; */
+    /* color: #B6AD90; */
+    position: static;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #1E140B;
+    border-top: 2px solid #1E140B;
+}
+
+.genres {
+    margin: 20px 0px;
+}
+
+.genre {
+    color: black;
+    text-decoration-color: #C2C5AA; 
+    margin: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.fixed-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.description-content {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.description a {
+    color: #111;
+}
+
+.author {
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side-info span{
+    display:block;
+}
+
+.right-side-info button {
+    margin-right: 50px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #293121;
+    color: white;
+}
+
+details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 600px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.stars {
+    width: 120px;    /* 5×24px */
+    height: 24px;
+    /* 1) Create the two-color fill at 84% */
+    background: linear-gradient(
+        to right,
+        #e5981a 0%,       /* orange */
+        #e5981a 84%,
+        #ccc 84%,         /* grey */
+        #ccc 100%
+        );
+        /* 2) Mask out everything except five star shapes */
+        -webkit-mask: url('data:image/svg+xml;utf8,\
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 \
+        5.82 22 7 14.14l-5-4.87 6.91-1.01z"/>\
+        </svg>') repeat-x 0 0;
+        mask: url('data:image/svg+xml;utf8,\
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 \
+        5.82 22 7 14.14l-5-4.87 6.91-1.01z"/>\
+        </svg>') repeat-x 0 0;
+        mask-size: 24px 24px;
+        -webkit-mask-size: 24px 24px;
+    }
+    
+    .score {
+        font-size: 1.4em;
+  font-weight: bold;
+  color: #111;
+}
+
+.meta {
+  font-size: 0.9em;
+  color: #555;
+}
+label {
+    font-size: 40px;
+}
+
+
+
+

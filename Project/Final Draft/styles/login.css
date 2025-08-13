@@ -1,0 +1,333 @@
+/* Same for every Page */
+
+@font-face {
+    font-family: Transcity;
+    src: url(/Project/Fonts/transcity.regular.otf);
+}
+@font-face {
+    font-family: Kugile;
+    src: url(/Project/Fonts/kugile.regular.ttf);
+}
+@font-face {
+    font-family: Oliver Regular;
+    src: url(/Project/Fonts/oliver.a.ttf);
+}
+@font-face {
+    font-family: Oliver Italic;
+    src: url(/Project/Fonts/oliver.oblique.ttf);
+}
+
+
+html {
+    background-image: linear-gradient(#C2C5AA, #A4AC86, #656D4A, #414833);
+    /* height: 100%; */
+    font-family: Oliver Regular;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #c2c5aa35;
+    border: 2px solid #333D29;
+
+}
+
+header {
+    padding: 10px 20px;
+    align-items: center;
+    padding: 10px 20px 0 20px;
+    border-bottom: 2px solid #333D29;
+    text-align: center;
+    position: relative;
+}
+
+
+.header-left {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+}
+
+.header-right button {
+    border: 1px solid #1E140B;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px #1E140B;
+    width: 7.5rem;
+    height: 3.125rem;
+    font-size: 1rem;
+    background: #A68A64;
+    color: #1E140B;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header h1{
+    color: #1E140B;
+    font-family: Transcity;
+    font-size: 3rem;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+#profileicon {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+}
+
+#searchbar {
+    max-width: 400px; 
+    width: 50%;
+    padding: 0.5rem; 
+    border: 1px solid #1E140B;
+    border-radius: 30px;
+}
+
+.brownButton {
+    border: 1px solid #1E140B;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px #1E140B;
+    font-size: 20px;
+    background: #A68A64;
+    color: #1E140B;
+}
+
+nav {
+    width: 100%;
+    margin-top: 10px;
+}
+
+nav ul {
+    border-radius: 10px;
+    height: 40px;
+    border: 2px solid #1E140B;
+    /* Green Nav Colour */
+    background-color: #293121;
+    /* Brown Nav Colour */
+    /* background-color: #3b2916; */
+    display: flex;
+    justify-content: space-around;
+    /* gap: 300px; */
+    font-family: Kugile;
+}
+
+nav ul li {
+    margin-top: 8px;
+    list-style: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav ul li a {
+    margin-top: -5px;
+
+}
+
+.dropdown {
+    margin-top: 3px;
+}
+
+nav ul li a, .dropdown {
+    /* Green Nav Text */
+    color: #C2C5AA;
+    /* Brown Nav Text */
+    /* color: #B6AD90; */
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 3px 3px 2px #1E140B;
+    background-color: #C2C5AA;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 13px 15px;
+    color: #1E140B;
+    text-decoration: none;
+    text-align: left;
+}
+
+nav ul li a:hover, .dropdown:hover {
+    background-color: #A4AC86;
+}
+
+.dropdown:hover .dropdown-content {
+    border: 1px solid #1E140B;
+    display:block;
+}
+
+/* End of same for every page */
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input {
+    display: inline-block;
+    width: 50%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.passwordrequirements {
+    list-style-type: none;
+}
+
+#login {
+    width: 100%;
+    text-align: center;
+}
+
+#loginButton {
+    margin: 2%;
+}
+
+#signUp {
+    width: 100%;
+    text-align: center;
+    border-left: 1px solid #1E140B;
+}
+
+form label {
+    font-size: 20px;
+}
+
+footer {
+    /* Green Footer */
+    background-color: #293121;
+    color: #C2C5AA;
+    /* Brown Footer */
+    /* background-color: #3b2916; */
+    /* color: #B6AD90; */
+    position: static;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #1E140B;
+    border-top: 2px solid #1E140B;
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+    
+  header {
+    text-align: center;
+}
+
+  .header-left img {
+    margin-bottom: -50px;
+}
+
+.header-left, .header-right {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+  
+  #searchbar {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #signUp {
+        border-left: none;
+        border-top: 1px solid #1E140B;
+        padding-top: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    main {
+    display: block;
+    }
+}
+@media (max-width: 570px) {
+
+  html {
+    font-size: 10px;
+  }
+
+  body, nav, main {
+    border: none;
+  }
+
+  header {
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative; 
+  }
+
+  .header-left {
+    justify-content: center;
+  }
+
+  .header-left img {
+    margin-bottom: -50px;
+}
+
+
+  .header-right {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .header-left, .header-right {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+
+
+  #searchbar {
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    font-size: 18px;
+    margin-top: 0;
+  }
+}

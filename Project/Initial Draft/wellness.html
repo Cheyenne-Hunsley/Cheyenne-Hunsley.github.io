@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="./styles/page.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/Project6/images/favicon.ico" type="image/x-icon">
+    <title>Homepage</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo_NW.png" alt="logo"  id="logo">
+        <h1>Bookaneers</h1>
+        <p>Search Bar</p>
+        <div>
+            <button type="button"><a href="login.html">Login/Sign Up</a></button>
+            <img src="images/profileicon.png"  alt="profile picture" id="profileicon">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li class="dropdown">Fiction
+                    <div class="dropdown-content">
+                        <a href="fantasy.html">Fantasy</a>
+                        <a href="fiction.html">Gen. Fiction</a>
+                        <a href="mystery.html">Mystery</a>
+                    </div>
+                </li>
+                <li class="dropdown">Non-Fiction
+                    <div class="dropdown-content">
+                        <a href="business.html">Business</a>
+                        <a href="cooking.html">Cooking</a>
+                        <a href="wellness.html" class="active">Welness</a>
+                    </div>
+                </li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="new" class="container-fluid">
+            <h1>New Releases</h1>
+            <img src="images/Wellness/newbook1.avif" id="newbook1" alt="The Myth of Normal">
+            <p id="text1">The Myth of Normal</p>
+            <img src="images/Wellness/newbook2.avif" id="newbook2" alt="Self Help">
+            <p id="text2">Self Help</p>
+            <img src="images/Wellness/newbook3.avif" id="newbook3" alt="The Lte Them Theory">
+            <p id="text3">The Let Them Theory</p>
+            <img src="images/Wellness/newbook4.avif" id="newbook4" alt="We can do Hard Things">
+            <p id="text4">We Can Do Hard Things</p>
+        </section>
+
+        <section id="trending" class="container-fluid">
+            <h1>Trending Now</h1>
+            <img src="images/Wellness/trendbook1.avif" id="trendbook1" alt="The Subtle Art of Not Giving a F*ck">
+            <p id="text1">The Subtle Art of Not Giving a F*ck</p>
+            <img src="images/Wellness/trendbook2.avif" id="trendbook2" alt="How to win friends & influence people">
+            <p id="text2">How to win friends & influence people</p>
+            <img src="images/Wellness/trendbook3.png" id="trendbook3"  alt="Atomic Habits">
+            <p id="text3">Atomic Habits</p>
+            <img src="images/Wellness/trendbook4.avif" id="trendbook4" alt="Atlas of the Heart">
+            <p id="text4">Atlas of the Heart</p>
+        </section>
+
+        <section id="aotm" class="container-fluid">
+            <h1>Author<br>of the Month</h1>
+            <img src="images/Wellness/authorImg.jpg" alt="Briana Wiest" id="aotmImg">
+            <h3>Briana Wiest</h3>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/Wellness/carbook1.avif" alt="101 Essays that will change the way you think" id="car-book1">
+                </div>
+
+                <div class="carousel-item">
+                <img src="images/Wellness/carbook2.avif" alt="The Pivot Year" id="car-book2">
+                
+                </div>
+                <div class="carousel-item">
+                <img src="images/Wellness/carbook3.avif" alt="The Mountain is You" id="car-book3">
+                </div>
+
+                <div class="carousel-item">
+                <img src="images/Wellness/carbook4.avif" alt="The Life that's Waiting" id="car-book4">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact Us</p>
+        <p>contact@bookaneers.ca</p>
+        <p></p>
+        <p>205 Humber College Boulevard, Toronto, ON, M9W 5L7</p>
+        <p>416-555-BOOK</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+</html> 
